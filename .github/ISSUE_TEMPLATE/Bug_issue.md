@@ -12,7 +12,7 @@ labels: bug
 
 ## Version information (Dawn, browsers and operating systems)
 
-- Dawn Version: 7.0.1
+- Awaken Theme Version: 2.0.3
 - Chrome Version 108.0.5359.124
 - macOS Version 13.1
 
