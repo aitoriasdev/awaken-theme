@@ -1,22 +1,25 @@
 .mega-menu {
   padding-block-start: 1.5rem;
+
+  .mega-menu__link {
+    font-size: var(--font-size--lg);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
-.mega-menu .mega-menu__link {
-  font-size: var(--font-size--lg);
+.language-selector {
+  .localization-form__select {
+    text-align: left;
+  }
 }
 
-.mega-menu .mega-menu__link:hover {
-  text-decoration: underline;
-}
-
-.language-selector .localization-form__select {
-  text-align: left;
-}
-
-.quick-add .quick-add__button {
-  background-color: var(--color-primary-button-background);
-  color: var(--color-primary-button-text);
+.quick-add {
+  .quick-add__button {
+    background-color: var(--color-primary-button-background);
+    color: var(--color-primary-button-text);
+  }
 }
 
 .policy_list li a:hover ,
@@ -24,6 +27,10 @@
   text-decoration: underline;
 }
 
-.footer-utilities a:hover {
-  color: var(--button-color);
+.footer-utilities {
+  a {
+    &:hover {
+      color: var(--button-color);
+    }
+  }
 }
