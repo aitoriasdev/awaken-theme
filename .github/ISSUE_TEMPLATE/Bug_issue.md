@@ -10,7 +10,7 @@ labels: bug
 ## Describe the expected behavior
 
 
-## Version information (Dawn, browsers and operating systems)
+## Version information (Awaken Theme, browsers and operating systems)
 
 - Awaken Theme Version: 2.0.3
 - Chrome Version 108.0.5359.124
