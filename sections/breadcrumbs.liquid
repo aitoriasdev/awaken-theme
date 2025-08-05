@@ -1,0 +1,229 @@
+{% comment %}
+  Breadcrumb navigation for Shopify Horizon theme (Liquid).
+  Includes accessible HTML and JSON-LD structured data.
+{% endcomment %}
+{% unless template == 'index' or template == 'cart' or template == '404' or template == 'list-collections' %}
+  <div class="section section--{{ section.settings.section_width }}">
+    <nav class="spacing-style breadcrumbs" role="navigation" aria-label="Breadcrumb" style="{% render 'spacing-padding', settings: section.settings %};">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="{{ routes.root_url }}" class="breadcrumbs__link">{{ 'breadcrumbs.home' | t}}</a>
+        </li>
+        {% if template == 'page' %}
+          <li class="breadcrumbs__item">
+            <a href="{{ page.url }}" class="breadcrumbs__link" aria-current="page">
+              {{ page.title }}
+            </a>
+          </li>
+        {% elsif template == 'collection' %}
+          <li class="breadcrumbs__item">
+            <a href="{{ collection.url }}" class="breadcrumbs__link" aria-current="page">
+              {{ collection.title }}
+            </a>
+          </li>
+        {% elsif template == 'product' %}
+          {% if collection %}
+            <li class="breadcrumbs__item">
+              <a href="{{ collection.url }}" class="breadcrumbs__link">
+                {{ collection.title }}
+              </a>
+            </li>
+          {% endif %}
+          <li class="breadcrumbs__item">
+            <a href="{{ product.url }}" class="breadcrumbs__link" aria-current="page">
+              {{ product.title }}
+            </a>
+          </li>
+        {% elsif template == 'blog' %}
+          <li class="breadcrumbs__item">
+            <a href="{{ blog.url }}" class="breadcrumbs__link" aria-current="page">
+              {{ blog.title }}
+            </a>
+          </li>
+        {% elsif template == 'article' %}
+          <li class="breadcrumbs__item">
+            <a href="{{ blog.url }}" class="breadcrumbs__link">
+              {{ blog.title }}
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="{{ article.url }}" class="breadcrumbs__link" aria-current="page">
+              {{ article.title }}
+            </a>
+          </li>
+        {% endif %}
+      </ol>
+    </nav>
+  </div>
+
+  <!-- JSON-LD structured data for Google BreadcrumbList -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": {{ 'breadcrumbs.home' | t | json }},
+          "item": {{ shop.url | json }}
+        }{% comment %} Additional breadcrumb items: {% endcomment %}
+        {% if template == 'page' %}
+          , {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ page.title | json }},
+            "item": {{ page.url | json }}
+          }
+        {% elsif template == 'collection' %}
+          , {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ collection.title | json }},
+            "item": {{ collection.url | json }}
+          }
+        {% elsif template == 'product' %}
+          {% if collection %}
+            , {
+              "@type": "ListItem",
+              "position": 2,
+              "name": {{ collection.title | json }},
+              "item": {{ collection.url | json }}
+            }
+          {% endif %}
+          , {
+            "@type": "ListItem",
+            "position": {% if collection %}3{% else %}2{% endif %},
+            "name": {{ product.title | json }},
+            "item": {{ product.url | json }}
+          }
+        {% elsif template == 'blog' %}
+          , {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ blog.title | json }},
+            "item": {{ blog.url | json }}
+          }
+        {% elsif template == 'article' %}
+          , {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ blog.title | json }},
+            "item": {{ blog.url | json }}
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": {{ article.title | json }},
+            "item": {{ article.url | json }}
+          }
+        {% endif %}
+      ]
+    }
+  </script>
+{% endunless %}
+
+{% stylesheet %}
+  .breadcrumbs {
+    color: var(--color-foreground);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .breadcrumbs__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .breadcrumbs__item {
+    align-items: center;
+    display: flex;
+  }
+
+  .breadcrumbs__item::after {
+    color: var(--color-foreground);
+    content: "›";
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .breadcrumbs__item:last-child::after {
+    content: "";
+    margin: 0;
+  }
+
+  .breadcrumbs__link {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .breadcrumbs__link:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+  }
+
+  .breadcrumbs__link[aria-current="page"] {
+    color: var(--color-foreground);
+    cursor: default;
+    pointer-events: none;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.breadcrumbs",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.section_width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:options.page"
+        },
+        {
+          "value": "full-width",
+          "label": "t:options.full"
+        }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.breadcrumbs_section",
+      "category": "t:categories.layout"
+    }
+  ]
+}
+{% endschema %}
