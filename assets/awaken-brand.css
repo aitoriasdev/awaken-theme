@@ -1,0 +1,29 @@
+.mega-menu {
+  padding-block-start: 1.5rem;
+}
+
+.mega-menu .mega-menu__link {
+  font-size: var(--font-size--lg);
+}
+
+.mega-menu .mega-menu__link:hover {
+  text-decoration: underline;
+}
+
+.language-selector .localization-form__select {
+  text-align: left;
+}
+
+.quick-add .quick-add__button {
+  background-color: var(--color-primary-button-background);
+  color: var(--color-primary-button-text);
+}
+
+.policy_list li a:hover ,
+.paragraph a:hover {
+  text-decoration: underline;
+}
+
+.footer-utilities a:hover {
+  color: var(--button-color);
+}
