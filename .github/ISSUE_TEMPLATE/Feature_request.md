@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Use this template for suggesting a Dawn enhancement
+about: Use this template for suggesting an Awaken Theme enhancement
 labels: enhancement
 ---
 
