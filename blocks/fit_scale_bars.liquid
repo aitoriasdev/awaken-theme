@@ -29,33 +29,24 @@
   </div>
   <div class="feature-bar">
     <span class="feature-title">{{ 'products.product.fit_label' | t }}</span>
-    <div class="bar-container">
-      <div class="bar">
-        {% if fit < 1 %}
-          {% assign fit = 1 %}
-        {% elsif fit > 5 %}
-          {% assign fit = 5 %}
-        {% endif %}
-
-        <!-- Calculate percentage based on 1–5 range -->
-        {% assign fit_percentage = fit | minus: 1 | times: 25 %}
-
-        <!-- Display bar with percentage -->
+    <div class="segment-bar" role="presentation">
+      {% for i in (1..5) %}
         <div
-          class="fill"
-          style="background-color: {{ block.settings.fit_scale_bar_color }}; width: {{ fit_percentage }}%;"
+          class="segment-bar__segment{% if i == fit %} segment-bar__segment--filled{% endif %}"
+          style="
+            background-color: {% if i == fit %}
+              {{ block.settings.fit_scale_bar_filled_color }}
+            {% else %}
+              {{ block.settings.fit_scale_bar_color }}
+            {% endif %};
+          "
         ></div>
-        <div class="indicator" style="left: {{ fit_percentage }}%;"></div>
-        <div class="marks">
-          {% for i in (1..5) %}
-            <div class="mark" style="left: {{ i | minus: 1 | times: 25 }}%;"></div>
-          {% endfor %}
-        </div>
-      </div>
+      {% endfor %}
     </div>
 
     <div class="scale-labels">
       <span>{{ 'products.product.fit_scale_start' | t }}</span>
+      <span>{{ 'products.product.fit_scale_true_to_size' | t }}</span>
       <span>{{ 'products.product.fit_scale_end' | t }}</span>
     </div>
   </div>
@@ -69,6 +60,7 @@
     overflow: hidden;
     padding: 1rem 0;
     transition: color 0.2s ease-in-out;
+    width: 100%;
   }
 
   .feature-bars::details-content {
@@ -110,58 +102,29 @@
     padding: 1rem 0;
   }
 
-  .bar-container {
-    background-color: #E8E8E8;
-    border-radius: 6px;
-    height: 10px;
-    margin-block-end: 1rem;
-    position: relative;
-    width: calc(100% - 10px);
+  .feature-bar .segment-bar {
+    display: flex;
+    margin-left: -6px;
   }
 
-  .bar {
-    height: 100%;
-    position: relative;
+  .feature-bar .segment-bar__segment {
+    flex: 1 0 0;
+    margin-left: 6px;
+    height: 5px;
+    background: rgb(var(--heading-color)/0.1);
+    border-radius: var(--btn-border-radius);
   }
 
-  .bar .fill {
-    background-color: #1C1C1C;
-    border-radius: 6px;
-    height: 100%;
-    transition: width 0.3s ease-in-out;
-  }
-
-  .bar .indicator {
-    background-color: #000;
-    border-radius: 50%;
-    height: 18px;
-    position: absolute;
-    top: -4px;
-    transform: translateX(-50%);
-    transition: left 0.3s ease-in-out;
-    width: 18px;
-    z-index: 1;
-  }
-
-  .marks {
-    position: absolute;
-    top: -5px;
-    width: 100%;
-  }
-
-  .mark {
-    background-color: #FFFFFF;
-    height: 10px;
-    position: absolute;
-    top: 0;
-    width: 2px;
+  .feature-bar .segment-bar__segment--filled {
+    background: rgb(var(--heading-color));
   }
 
   .scale-labels {
-    color: #666;
+    color: #1c1c1c;
     display: flex;
     font-size: 16px;
     justify-content: space-between;
+    margin-top: 0.5rem;
   }
 {% endstylesheet %}
 
@@ -174,6 +137,12 @@
       "type": "color",
       "label": "t:settings.fit_scale_bar_color",
       "id": "fit_scale_bar_color",
+      "default": "#f7f7f7"
+    },
+    {
+      "type": "color",
+      "label": "t:settings.fit_scale_bar_filled_color",
+      "id": "fit_scale_bar_filled_color",
       "default": "#1c1c1c"
     }
   ],

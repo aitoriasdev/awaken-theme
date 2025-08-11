@@ -1,0 +1,56 @@
+{%- if localization.available_languages.size > 1 -%}
+  <div class="footer-language-selector">
+    <localization-form>
+      {% form 'localization' %}
+        <label for="LanguageSelector">{{ 'content.language' | t }}</label>
+        <select name="locale_code" id="LanguageSelector" onchange="this.form.submit()">
+          {% for language in localization.available_languages %}
+            <option
+              value="{{ language.iso_code }}"
+              {% if language.iso_code == localization.language.iso_code %}
+                selected
+              {% endif %}
+            >
+              {{ language.endonym_name | capitalize }}
+            </option>
+          {% endfor %}
+        </select>
+      {% endform %}
+    </localization-form>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+.footer-language-selector {
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  .footer-language-selector label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .footer-language-selector select {
+    padding: 0.5rem;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.localization_selector",
+  "tag": null,
+  "settings": [],
+  "presets": [
+    {
+      "name": "t:names.localization_selector",
+      "category": "t:categories.basic"
+    }
+  ]
+}
+{% endschema %}
