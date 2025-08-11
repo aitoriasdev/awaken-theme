@@ -260,6 +260,7 @@
       "add_to_cart_error": "Error al agregar al carrito",
       "current_value": "Valor actual",
       "designed_for": "Diseñado para",
+      "details": "Detalles del producto",
       "fit_levels": {
         "one": "Entallado",
         "two": "Algo entallado",
@@ -271,6 +272,7 @@
       "fit_properties": "Características de la prenda",
       "fit_scale_end": "Holgado",
       "fit_scale_start": "Entallado",
+      "fit_scale_true_to_size": "Fiel al tamaño",
       "of": "de",
       "product_model": "Detalles del modelo",
       "product_model_height": "Altura",

@@ -279,6 +279,7 @@
       "adding_to_cart": "Adding...",
       "current_value": "Current value",
       "designed_for": "Designed for",
+      "details": "Product details",
       "fit_levels": {
         "one": "Very tight",
         "two": "Slightly tight",
@@ -290,6 +291,7 @@
       "fit_label": "Fit",
       "fit_scale_end": "Baggy",
       "fit_scale_start": "Slim",
+      "fit_scale_true_to_size": "True to size",
       "of": "of",
       "product_model": "Model details",
       "product_model_height": "Height",
