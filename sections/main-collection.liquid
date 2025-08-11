@@ -1,5 +1,3 @@
-
-
 <script
   src="{{ 'results-list.js' | asset_url }}"
   type="module"
@@ -43,19 +41,82 @@
 
     {% paginate collection.products by 24 %}
       {% capture children %}
-        {% for product in collection.products %}
-          <li
-            id="{{ section.id }}-{{ product.id }}"
-            class="product-grid__item product-grid__item--{{ forloop.index0 }}"
-            data-page="{{ paginate.current_page }}"
-            data-product-id="{{ product.id }}"
-            ref="cards[]"
-          >
-            {% # theme-check-disable %}
-            {% content_for 'block', type: '_product-card', id: 'product-card', closest.product: product %}
-            {% # theme-check-enable %}
-          </li>
-        {% endfor %}
+      {% for product in collection.products %}
+        <li
+          id="{{ section.id }}-{{ product.id }}"
+          class="product-grid__item product-grid__item--{{ forloop.index0 }}"
+          data-page="{{ paginate.current_page }}"
+          data-product-id="{{ product.id }}"
+          ref="cards[]"
+        >
+          {% # theme-check-disable %}
+          {% content_for 'block', type: '_product-card-variation', id: 'product-card', closest.product: product %}
+          {% # theme-check-enable %}
+        </li>
+      {% endfor %}
+      {% comment %} {%- assign displayed_colors = '' -%}
+      {%- for product in collection.products -%}
+        {%- for variant in product.variants -%}
+          {%- assign color = variant.option1 | strip -%}
+          {%- unless displayed_colors contains color -%}
+            {%- assign displayed_colors = displayed_colors | append: color | append: ',' -%}
+            {%- assign variant = variant | default: nil -%}
+            {%- assign product = product | default: nil -%}
+            {%- if variant and product -%}
+            <li
+              id="{{ section.id }}-variant-{{ variant.id }}"
+              class="product-grid__item"
+              data-page="{{ paginate.current_page }}"
+              data-product-id="{{ product.id }}"
+              ref="cards[]"
+            >
+              <a href="{{ product.url }}?variant={{ variant.id }}">
+                <div class="media media--hover-effect">
+                  <img
+                    src="{{ variant.image | image_url: 500 }}"
+                    alt="{{ variant.title | escape }}"
+                    loading="lazy"
+                    height="80"
+                    width="80"
+                  />
+                </div>
+                <div class="card-information">
+                  <h3 class="card-title h5">{{ product.title }} - {{ variant.option1 }}</h3>
+                  <p class="price">{{ variant.price | money }}</p>
+                </div>
+              </a>
+              <div class="color-swatches">
+                {%- assign shown_colors = '' -%}
+                {%- for sibling_variant in product.variants -%}
+                  {%- assign sibling_color = sibling_variant.option1 | strip -%}
+                  {%- assign color_key = sibling_color | handleize -%}
+                  {%- unless shown_colors contains color_key -%}
+                    {%- assign shown_colors = shown_colors | append: color_key | append: ',' -%}
+                    <a
+                      href="{{ product.url }}?variant={{ sibling_variant.id }}"
+                      title="{{ sibling_color }}"
+                      class="color-swatch"
+                    >
+                      {%- if sibling_variant.image -%}
+                        <img
+                          src="{{ sibling_variant.image | image_url: 50, crop: 'center' }}"
+                          alt="{{ sibling_color }}"
+                          loading="lazy"
+                          height="80"
+                          width="80"
+                        />
+                      {%- else -%}
+                        <span class="swatch-color-name">{{ sibling_color }}</span>
+                      {%- endif -%}
+                    </a>
+                  {%- endunless -%}
+                {%- endfor -%}
+              </div>
+            </li>
+            {% endif %}
+          {%- endunless -%}
+        {%- endfor -%}
+      {%- endfor -%} {% endcomment %}
       {% endcapture %}
 
       {% render 'product-grid',
