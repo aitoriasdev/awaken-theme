@@ -18,7 +18,7 @@
   {% if designed_for %}
     <div class="designed-for-tags" id="designed-for-description">
       {% for tag in designed_for.value %}
-        <span class="designed-for-tag">{{ tag }}</span>
+        <span class="designed-for-tag">{{ tag.taxonomy_reference }}</span>
       {% endfor %}
     </div>
   {% endif %}
@@ -27,7 +27,7 @@
 
 {% stylesheet %}
   .product-designed-for {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #1c1c1c;
     interpolate-size: allow-keywords;
     overflow: hidden;
     padding: 1rem 0;
