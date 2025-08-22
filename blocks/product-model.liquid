@@ -1,0 +1,139 @@
+{% assign model_height = product.metafields.custom.model_height %}
+{% assign model_image = product.metafields.custom.model_image.value %}
+{% assign model_name = product.metafields.custom.model_name %}
+{% assign model_size = product.metafields.custom.model_size %}
+{% assign model_waist = product.metafields.custom.model_waist %}
+{% assign model_weight = product.metafields.custom.model_weight %}
+
+{% if model_height or model_image or model_name or model_size or model_waist or model_weight %}
+<details
+  class="product-model"
+  name="product-model"
+  aria-labelledby="product-model-label"
+  aria-describedby="product-model-description"
+>
+  <summary id="product-model-label">
+    <span class="summary-span">{{ 'products.product.product_model' | t }}</span>
+    <span class="chevron" aria-hidden="true">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+      </svg>
+    </span>
+  </summary>
+  <div class="product-model__details" id="product-model-description">
+    <div class="product-model__image-container">
+      <img
+        src="{{ model_image | image_url: width: 80, height: 80 }}"
+        alt="{{ 'products.product.product_model_image' | t }}"
+        class="product-model__image"
+        height="80"
+        width="80"
+      >
+    </div>
+    <div class="product-model__description-container">
+      <div>
+        <span>{{ 'products.product.product_model_name' | t }}:</span> <span class="bold"> {{ model_name }}</span>
+      </div>
+      <div class="product-model__description">
+        <div>
+          <span>{{ 'products.product.product_model_size' | t }}:</span> <span class="bold"> {{ model_size }}</span>
+        </div>
+        <div>
+          <span>{{ 'products.product.product_model_height' | t }}:</span> <span class="bold"> {{ model_height }}</span>
+        </div>
+        <div>
+          <span>{{ 'products.product.product_model_weight' | t }}:</span> <span class="bold"> {{ model_weight }}</span>
+        </div>
+        <div>
+          <span>{{ 'products.product.product_model_waist' | t }}:</span> <span class="bold"> {{ model_waist }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</details>
+{% endif %}
+
+{% stylesheet %}
+  .product-model {
+    border-bottom: 1px solid #1c1c1c;
+    interpolate-size: allow-keywords;
+    overflow: hidden;
+    padding: 1rem 0;
+    transition: color 0.2s ease-in-out;
+    width: 100%;
+  }
+
+  .product-model::details-content {
+    block-size: 0;
+    transition: block-size 0.2s, content-visibility 0.2s;
+    transition-behavior: allow-discrete;
+  }
+
+  .product-model[open]::details-content {
+    block-size: auto;
+  }
+
+  .product-model summary {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-model summary .summary-span {
+    font-size: 18px;
+  }
+
+  .product-model summary .chevron {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .product-model[open] summary .chevron {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .product-model__details {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .product-model__image {
+    aspect-ratio: 1/1;
+    border: 1px solid #111111;
+    border-radius: 50%;
+    height: auto;
+    width: 80px;
+  }
+
+  .product-model__description-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-model__description {
+    display: flex;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    row-gap: 1rem;
+  }
+
+  .product-model__description > div {
+    width: 50%;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.product_model",
+  "tag": null,
+  "settings": [],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "t:names.product_model",
+      "category": "t:categories.product"
+    }
+  ]
+}
+{% endschema %}
