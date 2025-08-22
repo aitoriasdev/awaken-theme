@@ -35,7 +35,7 @@
     "inputs": "Eingaben",
     "primary_button": "Primäre Schaltfläche",
     "secondary_button": "Sekundäre Schaltfläche",
-    "popovers": "Pop-overs",
+    "popovers_and_modals": "Pop-overs und Modals",
     "marquee": "Marquee",
     "products_carousel": "Vorgestellte Kollektion: Karussell",
     "products_grid": "Vorgestellte Kollektion: Raster",
@@ -163,7 +163,9 @@
     "product_inventory": "Produktinventar",
     "pills": "Kapseln",
     "description": "Beschreibung",
-    "featured_image": "Feature-Bild"
+    "featured_image": "Feature-Bild",
+    "multicolumn": "Mehrspaltig",
+    "rich_text_section": "Rich Text"
   },
   "settings": {
     "autoplay": "Automatische Wiedergabe",
@@ -493,7 +495,10 @@
     "product_card_carousel": "Karussell anzeigen",
     "media_fit": "Medienanpassung",
     "scroll_speed": "Zeit bis zur nächsten Ankündigung",
-    "show_powered_by_shopify": "\"Powered by Shopify\" anzeigen"
+    "show_powered_by_shopify": "\"Powered by Shopify\" anzeigen",
+    "seller_note_open_by_default": "Hinweis an Verkäufer standardmäßig öffnen",
+    "gift_card_form": "Gutscheinformular",
+    "add_to_cart_animation": "In den Warenkorb"
   },
   "options": {
     "adapt_to_image": "An Bild anpassen",
@@ -837,7 +842,6 @@
     "carousel": "Karussell",
     "colors": "Farben",
     "collection_page": "Kollektionsseite",
-    "copyright_info": "Hier erfährst du, wie du [deinen Urheberrechtshinweis bearbeitest](https://help.shopify.com/manual/online-store/themes/customizing-themes/remove-powered-by-shopify-message)",
     "customer_account": "Kundenkonto",
     "edit_empty_state_collection_in_theme_settings": "Kollektion mit Status „Leer“ in [Theme-Einstellungen]](/editor?context=theme&category=search) verwalten",
     "home_page": "Startseite",
@@ -868,7 +872,9 @@
     "resource_reference_product_title": "Zeigt Titel aus übergeordnetem Produkt an",
     "resource_reference_product_variant_picker": "Zeigt Varianten aus übergeordnetem Produkt an",
     "product_media": "Produktmedien",
-    "section_link": "Abschnitts-Link"
+    "section_link": "Abschnitts-Link",
+    "gift_card_form_description": "Kunden können Gutscheine per E-Mail mit einer persönlichen Nachricht an den Empfänger senden. [Mehr Informationen](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "Überschrift"
   },
   "html_defaults": {
     "share_information_about_your": "<p>Teile Infos über deine Marke mit deinen Kunden. Beschreibe ein Produkt, kündige etwas an oder heiße Kunden willkommen.</p>"

@@ -218,7 +218,19 @@
     "shipping_policy": "Spese di spedizione calcolate al check-out.",
     "powered_by": "Questo negozio sarà ospitato su",
     "store_owner_link_html": "Il negozio è di tua proprietà? <a href=\"{{ link }}\">Accedi qui</a>",
-    "shipping_discount_error": "Gli sconti sulla spedizione vengono mostrati al momento del check-out dopo l'aggiunta di un indirizzo"
+    "shipping_discount_error": "Gli sconti sulla spedizione vengono mostrati al momento del check-out dopo l'aggiunta di un indirizzo",
+    "recipient_form_send_to": "Invia a",
+    "recipient_form_email_label": "Email del destinatario",
+    "recipient_form_email_label_my_email": "La mia email",
+    "recipient_form_email_address": "Indirizzo email del destinatario",
+    "recipient_form_name_label": "Nome destinatario (facoltativo)",
+    "recipient_form_message": "Messaggio (facoltativo)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} caratteri utilizzati",
+    "recipient_form_send_on": "GG/MM/AAAA",
+    "recipient_form_send_on_label": "Spedisci il giorno (opzionale)",
+    "recipient_form_fields_visible": "I campi del modulo destinatario sono ora visibili",
+    "recipient_form_fields_hidden": "I campi del modulo destinatario sono ora nascosti",
+    "recipient_form_error": "Si è verificato un errore durante l'invio del modulo"
   },
   "gift_cards": {
     "issued": {

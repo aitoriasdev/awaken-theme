@@ -223,7 +223,19 @@
     "shipping_policy": "Dostava se obračuna ob zaključku nakupa.",
     "powered_by": "To trgovino bo omogočala platforma",
     "store_owner_link_html": "Ali ste lastnik te trgovine? <a href=\"{{ link }}\">Prijavite se tukaj</a>",
-    "shipping_discount_error": "Popusti za dostavo so prikazani ob zaključku nakupa po dodajanju naslova"
+    "shipping_discount_error": "Popusti za dostavo so prikazani ob zaključku nakupa po dodajanju naslova",
+    "recipient_form_send_to": "Pošlji na",
+    "recipient_form_email_label": "E-poštni naslov prejemnika",
+    "recipient_form_email_label_my_email": "Moj e-poštni naslov",
+    "recipient_form_email_address": "E-poštni naslov prejemnika",
+    "recipient_form_name_label": "Ime prejemnika (izbirno)",
+    "recipient_form_message": "Sporočilo (izbirno)",
+    "recipient_form_characters_used": "Uporabljeno št. znakov: {{ used_chars }}/{{ max_chars }}",
+    "recipient_form_send_on": "LLLL-MM-DD",
+    "recipient_form_send_on_label": "Pošlji na datum (izbirno)",
+    "recipient_form_fields_visible": "Polja obrazca prejemnika so zdaj vidna",
+    "recipient_form_fields_hidden": "Polja obrazca prejemnika so zdaj skrita",
+    "recipient_form_error": "Pri pošiljanju obrazca je prišlo do napake"
   },
   "gift_cards": {
     "issued": {

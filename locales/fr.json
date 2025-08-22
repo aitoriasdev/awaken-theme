@@ -218,7 +218,19 @@
     "store_owner_link_html": "Êtes-vous le propriétaire de la boutique ? <a href=\"{{ link }}\">Connectez-vous ici</a>",
     "shipping_discount_error": "Les réductions sur l’expédition sont affichées lors du paiement après avoir ajouté une adresse",
     "discount_code_error": "Le code de réduction ne peut pas être appliqué à votre panier",
-    "discount": "Réduction"
+    "discount": "Réduction",
+    "recipient_form_send_to": "Envoyer à",
+    "recipient_form_email_label": "E-mail du destinataire",
+    "recipient_form_email_label_my_email": "Mon e-mail",
+    "recipient_form_email_address": "Adresse e-mail du destinataire",
+    "recipient_form_name_label": "Nom du destinataire (facultatif)",
+    "recipient_form_message": "Message (facultatif)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} caractères utilisés",
+    "recipient_form_send_on": "JJ-MM-AAAA",
+    "recipient_form_send_on_label": "Envoyer le (facultatif)",
+    "recipient_form_fields_visible": "Les champs du formulaire de destinataire sont désormais visibles",
+    "recipient_form_fields_hidden": "Les champs du formulaire de destinataire sont désormais masqués",
+    "recipient_form_error": "La soumission du formulaire présentait une erreur"
   },
   "gift_cards": {
     "issued": {

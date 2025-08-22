@@ -213,7 +213,19 @@
     "shipping_discount_error": "Verzendkortingen worden bij de checkout getoond nadat het adres is ingevoerd",
     "discount_code_error": "Kortingscode kan niet worden toegepast op je winkelwagen",
     "powered_by": "Deze winkel wordt mogelijk gemaakt door",
-    "store_owner_link_html": "Ben jij de winkeleigenaar? <a href=\"{{ link }}\">Log hier in</a>"
+    "store_owner_link_html": "Ben jij de winkeleigenaar? <a href=\"{{ link }}\">Log hier in</a>",
+    "recipient_form_send_to": "Verzenden naar",
+    "recipient_form_email_label": "E-mailadres ontvanger",
+    "recipient_form_email_label_my_email": "Mijn e-mailadres",
+    "recipient_form_email_address": "E-mailadres ontvanger",
+    "recipient_form_name_label": "Naam ontvanger (optioneel)",
+    "recipient_form_message": "Bericht (optioneel)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} tekens gebruikt",
+    "recipient_form_send_on": "JJJJ-MM-DD",
+    "recipient_form_send_on_label": "Verzenden op (optioneel)",
+    "recipient_form_fields_visible": "De formuliervelden voor de ontvanger zijn nu zichtbaar",
+    "recipient_form_fields_hidden": "De formuliervelden voor de ontvanger zijn nu verborgen",
+    "recipient_form_error": "Er is een fout opgetreden bij de indiening van het formulier"
   },
   "gift_cards": {
     "issued": {

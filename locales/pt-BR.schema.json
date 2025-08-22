@@ -35,7 +35,7 @@
     "inputs": "Entradas",
     "primary_button": "Botão principal",
     "secondary_button": "Botão secundário",
-    "popovers": "Pop-overs",
+    "popovers_and_modals": "Pop-overs e modais",
     "marquee": "Faixa",
     "alternating_content_rows": "Linhas alternadas",
     "pull_quote": "Citação em destaque",
@@ -163,7 +163,9 @@
     "product_list_button": "Botão \"Ver tudo\"",
     "product_inventory": "Estoque de produtos",
     "description": "Descrição",
-    "featured_image": "Imagem em destaque"
+    "featured_image": "Imagem em destaque",
+    "multicolumn": "Multicolunas",
+    "rich_text_section": "Rich text"
   },
   "settings": {
     "alignment": "Alinhamento",
@@ -492,8 +494,11 @@
     "media": "Mídia",
     "product_card_carousel": "Mostrar carrossel",
     "media_fit": "Ajuste da mídia",
-    "scroll_speed": "Tempo para o próximo comunicado",
-    "show_powered_by_shopify": "Mostrar \"Powered by Shopify\""
+    "scroll_speed": "Tempo até o próximo anúncio",
+    "show_powered_by_shopify": "Mostrar \"Com tecnologia da Shopify\"",
+    "gift_card_form": "Formulário de cartão-presente",
+    "seller_note_open_by_default": "Abrir a observação para o vendedor como padrão",
+    "add_to_cart_animation": "Adicionar ao carrinho"
   },
   "options": {
     "adapt_to_image": "Adaptar à imagem",
@@ -839,7 +844,6 @@
     "carousel": "Carrossel",
     "colors": "Cores",
     "collection_page": "Página de coleção",
-    "copyright_info": "Saiba como [editar sua declaração de direitos autorais](https://help.shopify.com/manual/online-store/themes/customizing-themes/remove-powered-by-shopify-message)",
     "customer_account": "Conta de cliente",
     "edit_empty_state_collection_in_theme_settings": "Editar coleção de estado vazio nas [configurações do tema ](/editor?context=theme&category=search)",
     "grid_layout": "Layout de grade",
@@ -868,7 +872,9 @@
     "resource_reference_product_variant_picker": "Exibe variantes do produto principal",
     "resource_reference_product_media": "Exibe a mídia do produto principal",
     "product_media": "Mídias do produto",
-    "section_link": "Link da seção"
+    "section_link": "Link da seção",
+    "gift_card_form_description": "Os clientes podem enviar cartões-presente para o e-mail do destinatário com uma mensagem pessoal. [Saiba mais](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "Título"
   },
   "html_defaults": {
     "share_information_about_your": "<p>Compartilhe informações sobre a marca com clientes. Descreva um produto, faça comunicados ou dê as boas-vindas aos clientes na loja.</p>"

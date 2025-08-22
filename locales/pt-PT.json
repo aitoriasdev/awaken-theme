@@ -218,7 +218,19 @@
       "one": "{{ count }} restante(s)",
       "other": "{{ count }} restante(s)",
       "many": "{{ count }} restante(s)"
-    }
+    },
+    "recipient_form_send_to": "Enviar para",
+    "recipient_form_email_label": "E-mail do destinatário",
+    "recipient_form_email_label_my_email": "O meu e-mail",
+    "recipient_form_email_address": "Endereço de e-mail do destinatário",
+    "recipient_form_name_label": "Nome do destinatário (opcional)",
+    "recipient_form_message": "Mensagem (opcional)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} caracteres usados",
+    "recipient_form_send_on": "AAAA-MM-DD",
+    "recipient_form_send_on_label": "Enviar em (opcional)",
+    "recipient_form_fields_visible": "Os campos do formulário de destinatário estão agora visíveis",
+    "recipient_form_fields_hidden": "Os campos do formulário de destinatário estão agora ocultos",
+    "recipient_form_error": "Ocorreu um erro na submissão do formulário"
   },
   "gift_cards": {
     "issued": {

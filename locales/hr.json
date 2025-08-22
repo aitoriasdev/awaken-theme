@@ -218,7 +218,19 @@
     "discount_code_error": "Kod za popust se ne može primijeniti na Vašu košaricu",
     "shipping_discount_error": "Popusti na dostavu prikazuju se na blagajni nakon dodavanja adrese",
     "powered_by": "Ova trgovina koristi sustav",
-    "store_owner_link_html": "Jeste li vlasnik/vlasnica trgovine? <a href=\"{{ link }}\">Prijavite se ovdje</a>"
+    "store_owner_link_html": "Jeste li vlasnik/vlasnica trgovine? <a href=\"{{ link }}\">Prijavite se ovdje</a>",
+    "recipient_form_send_to": "Pošalji na",
+    "recipient_form_email_label": "E-adresa primatelja",
+    "recipient_form_email_label_my_email": "Moju e-adresu",
+    "recipient_form_email_address": "E-adresu primatelja",
+    "recipient_form_name_label": "Ime primatelja (nije obavezno)",
+    "recipient_form_message": "Poruka (nije obavezno)",
+    "recipient_form_characters_used": "Upotrijebljeno znakova: {{ used_chars }}/{{ max_chars }}",
+    "recipient_form_send_on": "GGGG-MM-DD",
+    "recipient_form_send_on_label": "Datum slanja (nije obavezno)",
+    "recipient_form_fields_visible": "Polja obrasca primatelja sada su vidljiva",
+    "recipient_form_fields_hidden": "Polja obrasca primatelja sada su skrivena",
+    "recipient_form_error": "Došlo je do pogreške u slanju obrasca"
   },
   "gift_cards": {
     "issued": {

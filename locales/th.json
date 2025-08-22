@@ -213,7 +213,19 @@
     "discount_code_error": "ไม่สามารถใช้รหัสส่วนลดกับตะกร้าสินค้าของคุณได้",
     "shipping_policy": "คำนวณค่าจัดส่งในขั้นตอนการชำระเงิน",
     "powered_by": "ร้านค้านี้จะได้รับการสนับสนุนจาก",
-    "store_owner_link_html": "หากคุณเป็นเจ้าของร้าน <a href=\"{{ link }}\">เข้าสู่ระบบที่นี่</a>"
+    "store_owner_link_html": "หากคุณเป็นเจ้าของร้าน <a href=\"{{ link }}\">เข้าสู่ระบบที่นี่</a>",
+    "recipient_form_send_to": "ส่งถึง",
+    "recipient_form_email_label": "อีเมลผู้รับ",
+    "recipient_form_email_label_my_email": "อีเมลของฉัน",
+    "recipient_form_email_address": "ที่อยู่อีเมลผู้รับ",
+    "recipient_form_name_label": "ชื่อผู้รับ (ไม่บังคับ)",
+    "recipient_form_message": "ข้อความ (ไม่บังคับ)",
+    "recipient_form_characters_used": "ใช้ไปแล้ว {{ used_chars }}/{{ max_chars }} อักขระ",
+    "recipient_form_send_on": "ปปปป-ดด-วว",
+    "recipient_form_send_on_label": "ส่งเมื่อ (ไม่บังคับ)",
+    "recipient_form_fields_visible": "แสดงช่องข้อมูลผู้รับในแบบฟอร์มแล้ว",
+    "recipient_form_fields_hidden": "ซ่อนช่องข้อมูลผู้รับในแบบฟอร์มแล้ว",
+    "recipient_form_error": "เกิดข้อผิดพลาดในการส่งแบบฟอร์ม"
   },
   "gift_cards": {
     "issued": {

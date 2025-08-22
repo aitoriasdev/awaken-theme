@@ -213,7 +213,19 @@
     "store_owner_link_html": "Oletko kaupan omistaja? <a href=\"{{ link }}\">Kirjaudu sisään tästä</a>",
     "shipping_discount_error": "Toimitusalennukset näytetään kassalla osoitteen lisäämisen jälkeen",
     "discount_code_error": "Alennuskoodin lisääminen ostoskoriisi ei onnistu",
-    "shipping_policy": "Toimituskulut lasketaan kassalla."
+    "shipping_policy": "Toimituskulut lasketaan kassalla.",
+    "recipient_form_send_to": "Lähetä:",
+    "recipient_form_email_label": "Vastaanottajan sähköpostiosoite",
+    "recipient_form_email_label_my_email": "Oma sähköpostiosoite",
+    "recipient_form_email_address": "Vastaanottajan sähköpostiosoite",
+    "recipient_form_name_label": "Vastaanottajan sähköpostiosoite (valinnainen)",
+    "recipient_form_message": "Viesti (valinnainen)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} merkkiä käytetty",
+    "recipient_form_send_on": "VVVV-KK-PP",
+    "recipient_form_send_on_label": "Lähetysajankohta (valinnainen)",
+    "recipient_form_fields_visible": "Vastaanottajalomakekentät ovat nyt näkyvissä",
+    "recipient_form_fields_hidden": "Vastaanottajalomakekentät ovat nyt piilotettuja",
+    "recipient_form_error": "Lomakkeen lähettämisessä tapahtui virhe"
   },
   "gift_cards": {
     "issued": {

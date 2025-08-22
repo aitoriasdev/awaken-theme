@@ -213,7 +213,19 @@
     "inventory_low_stock_show_count": {
       "one": "{{ count }} tilbage",
       "other": "{{ count }} tilbage"
-    }
+    },
+    "recipient_form_send_to": "Send til",
+    "recipient_form_email_label": "Modtagerens mail",
+    "recipient_form_email_label_my_email": "Min mail",
+    "recipient_form_email_address": "Modtagers mailadresse",
+    "recipient_form_name_label": "Modtagerens navn (valgfrit)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} tegn brugt",
+    "recipient_form_send_on": "ÅÅÅÅ-MM-DD",
+    "recipient_form_send_on_label": "Send (valgfrit)",
+    "recipient_form_message": "Besked (valgfrit)",
+    "recipient_form_fields_visible": "Modtagerformularfelterne er nu synlige",
+    "recipient_form_fields_hidden": "Modtagerformularfelterne er nu skjulte",
+    "recipient_form_error": "Der opstod en fejl ved indsendelsen af formularen"
   },
   "gift_cards": {
     "issued": {

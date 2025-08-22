@@ -8,6 +8,7 @@
     "icon": "Ícono",
     "logo_and_favicon": "Logo y favicon",
     "overlapping_blocks": "Bloques solapados",
+    "rich_text_section": "Texto enriquecido",
     "product_buy_buttons": "Botones de compra",
     "product_description": "Descripción",
     "product_price": "Precio",
@@ -33,7 +34,7 @@
     "product_cards": "Tarjetas de producto",
     "primary_button": "Botón principal",
     "secondary_button": "Botón secundario",
-    "popovers": "Elementos emergentes",
+    "popovers_and_modals": "Elementos emergentes y modales",
     "buttons": "Botones",
     "inputs": "Entradas",
     "marquee": "Marquesina",
@@ -164,13 +165,14 @@
     "pills": "Cápsulas",
     "description": "Descripción",
     "featured_image": "Imagen destacada",
+    "multicolumn": "Multicolumna",
     "breadcrumbs": "Migas de pan",
     "breadcrumbs_section": "Migas de pan",
     "fit_scale_bars": "Barras de ajuste de prenda",
     "localization_selector": "Selector de idioma",
     "product_designed_for": "Diseñado para",
     "product_details": "Detalles del producto",
-    "product_model": "Modelo del producto",
+    "product_model": "Modelo del producto"
   },
   "settings": {
     "alignment": "Alineación",
@@ -192,8 +194,6 @@
     "custom_width": "Ancho personalizado",
     "enable_video_looping": "Reproducción de video en bucle",
     "favicon": "Favicon",
-    "fit_scale_bar_color": "Color de la barra",
-    "fit_scale_bar_filled_color": "Color de relleno de la barra",
     "font_family": "Familia de fuentes",
     "gap": "Espacio",
     "geometric_translate_y": "Traslación Y geométrica",
@@ -501,8 +501,13 @@
     "media": "Elementos multimedia",
     "product_card_carousel": "Mostrar carrusel",
     "media_fit": "Ajuste de elemento multimedia",
-    "scroll_speed": "Desplazarse al siguiente anuncio",
-    "show_powered_by_shopify": "Mostrar \"Con tecnología de Shopify\""
+    "scroll_speed": "Tiempo hasta el siguiente anuncio",
+    "show_powered_by_shopify": "Mostrar \" con Tecnología de Shopify\".",
+    "gift_card_form": "Formulario de tarjeta de regalo",
+    "seller_note_open_by_default": "Abrir nota para el vendedor de forma predeterminada",
+    "add_to_cart_animation": "Agregar al carrito",
+    "fit_scale_bar_color": "Color de la barra",
+    "fit_scale_bar_filled_color": "Color de relleno de la barra"
   },
   "options": {
     "adapt_to_image": "Adaptar a la imagen",
@@ -836,7 +841,6 @@
     "size": "Tamaño",
     "social_media": "Redes sociales",
     "submit_button": "Botón de enviar",
-    "submissions_are_sent_to_store_email_address": "Las solicitudes se envían a la [dirección de correo electrónico del remitente](https://admin.shopify.com/settings/notifications) de tu tienda.",
     "text_presets": "Textos predefinidos",
     "transparent_background": "Fondo transparente",
     "typography_primary": "Tipografía principal",
@@ -877,7 +881,9 @@
     "resource_reference_product_variant_picker": "Muestra variantes del producto principal",
     "resource_reference_product_media": "Muestra multimedia del producto principal",
     "product_media": "Elementos multimedia del producto",
-    "section_link": "Enlace de la sección"
+    "section_link": "Enlace de la sección",
+    "gift_card_form_description": "Los clientes pueden enviar tarjetas de regalo al correo electrónico del destinatario junto con un mensaje personal. [Más información](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "Encabezado"
   },
   "html_defaults": {
     "share_information_about_your": "<p>Comparte información sobre tu marca con los clientes. Describe un producto, comparte anuncios o da la bienvenida a los clientes a tu tienda.</p>"

@@ -223,7 +223,19 @@
     "store_owner_link_html": "Jste majitelem obchodu? <a href=\"{{ link }}\">Přihlaste se zde</a>",
     "shipping_discount_error": "Slevy na dopravu se zobrazí při placení po přidání adresy.",
     "discount_code_error": "Slevový kód nelze na váš košík uplatnit",
-    "shipping_policy": "Cena za dopravu se vypočítá u pokladny."
+    "shipping_policy": "Cena za dopravu se vypočítá u pokladny.",
+    "recipient_form_send_to": "Odeslat na",
+    "recipient_form_email_label": "E-mail příjemce",
+    "recipient_form_email_label_my_email": "Můj e-mail",
+    "recipient_form_email_address": "E-mailová adresa příjemce",
+    "recipient_form_name_label": "Jméno příjemce (volitelné)",
+    "recipient_form_message": "Zpráva (volitelné)",
+    "recipient_form_characters_used": "Použito {{ used_chars }}/{{ max_chars }} znaků",
+    "recipient_form_send_on": "RRRR-MM-DD",
+    "recipient_form_send_on_label": "Datum odeslání (volitelné)",
+    "recipient_form_fields_visible": "Pole formuláře příjemce jsou nyní viditelná",
+    "recipient_form_fields_hidden": "Pole formuláře příjemce jsou nyní skrytá",
+    "recipient_form_error": "Vyskytla se chyba při odesílání formuláře"
   },
   "gift_cards": {
     "issued": {

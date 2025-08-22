@@ -213,7 +213,19 @@
     "discount_code_error": "折扣码无法应用于您的购物车",
     "shipping_policy": "结账时计算运费。",
     "powered_by": "此商店依托",
-    "store_owner_link_html": "您是否为店主？<a href=\"{{ link }}\">在此处登录</a>"
+    "store_owner_link_html": "您是否为店主？<a href=\"{{ link }}\">在此处登录</a>",
+    "recipient_form_send_to": "发送至",
+    "recipient_form_email_label": "收件人电子邮件",
+    "recipient_form_email_label_my_email": "我的电子邮件",
+    "recipient_form_email_address": "收件人电子邮件地址",
+    "recipient_form_name_label": "收件人姓名（可选）",
+    "recipient_form_message": "消息（可选）",
+    "recipient_form_characters_used": "已输入 {{ used_chars }} 个字符，最多 {{ max_chars }} 个",
+    "recipient_form_send_on": "年-月-日",
+    "recipient_form_send_on_label": "发送日期（可选）",
+    "recipient_form_fields_visible": "收件人表单字段现在可见",
+    "recipient_form_fields_hidden": "收件人表单字段现已隐藏",
+    "recipient_form_error": "提交表单时出现错误"
   },
   "gift_cards": {
     "issued": {

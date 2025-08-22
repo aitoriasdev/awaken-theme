@@ -223,7 +223,19 @@
     "shipping_policy": "Siuntimo išlaidos apskaičiuojamos atsiskaitant.",
     "shipping_discount_error": "Siuntimui taikomos nuolaidos rodomos atsiskaitant, įvedus adresą",
     "powered_by": "Ši parduotuvė bus teikiama per platformą",
-    "store_owner_link_html": "Ar esate parduotuvės savininkas? <a href=\"{{ link }}\">Prisijunkite čia</a>"
+    "store_owner_link_html": "Ar esate parduotuvės savininkas? <a href=\"{{ link }}\">Prisijunkite čia</a>",
+    "recipient_form_send_to": "Siųsti",
+    "recipient_form_email_label": "Gavėjo el. pašto adresas",
+    "recipient_form_email_label_my_email": "Mano el. pašto adresas",
+    "recipient_form_email_address": "Gavėjo el. pašto adresas",
+    "recipient_form_name_label": "Gavėjo vardas (pasirinktinai)",
+    "recipient_form_message": "Žinutė (pasirinktinai)",
+    "recipient_form_characters_used": "Panaudota {{ used_chars }}/{{ max_chars }} simbolių",
+    "recipient_form_send_on": "MMMM-MM-DD",
+    "recipient_form_send_on_label": "Išsiuntimo data (pasirinktinai)",
+    "recipient_form_fields_visible": "Dabar gavėjo formos laukai yra matomi",
+    "recipient_form_fields_hidden": "Dabar gavėjo formos laukai yra paslėpti",
+    "recipient_form_error": "Įvyko su formos pateikimu susijusi klaida"
   },
   "gift_cards": {
     "issued": {

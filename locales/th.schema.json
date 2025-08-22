@@ -35,7 +35,7 @@
     "inputs": "อินพุต",
     "primary_button": "ปุ่มหลัก",
     "secondary_button": "ปุ่มรอง",
-    "popovers": "ป๊อปโอเวอร์",
+    "popovers_and_modals": "ป๊อปโอเวอร์และโมดอล",
     "pull_quote": "ข้อความโดดเด่น",
     "contact_form": "แบบฟอร์มการติดต่อ",
     "featured_product": "จุดเด่นของสินค้า",
@@ -118,11 +118,11 @@
     "utilities": "สาธารณูปโภค",
     "video_section": "วิดีโอ",
     "alternating_content_rows": "แถวสลับสี",
-    "products_carousel": "คอลเลกชันแนะนำ: ภาพสไลด์",
-    "products_grid": "คอลเลกชันแนะนำ: กริด",
+    "products_carousel": "คอลเลกชันเด่น: ภาพสไลด์",
+    "products_grid": "คอลเลกชันเด่น: กริด",
     "spacer": "ตัวเว้นวรรค",
     "jumbo_text": "ข้อความขนาดใหญ่มาก",
-    "product_list": "คอลเลกชันแนะนำ",
+    "product_list": "คอลเลกชันเด่น",
     "search_input": "ค้นหาอินพุต",
     "search_results": "ผลลัพธ์การค้นหา",
     "read_only": "อ่านอย่างเดียว",
@@ -155,7 +155,7 @@
     "policy_list": "ลิงก์นโยบาย",
     "prices": "ราคา",
     "product_list_button": "ดูปุ่มทั้งหมด",
-    "products_editorial": "คอลเลกชันแนะนำ: นิตยสาร",
+    "products_editorial": "คอลเลกชันเด่น: รูปแบบบทความ",
     "product_inventory": "สินค้าคงคลัง",
     "social_link": "ลิงก์โซเชียลมีเดีย",
     "split_showcase": "การแสดงผลแบบแบ่งส่วน",
@@ -163,7 +163,9 @@
     "pills": "ทรงเม็ดยา",
     "large_logo": "โลโก้ขนาดใหญ่",
     "description": "คำอธิบาย",
-    "featured_image": "รูปภาพที่แสดง"
+    "featured_image": "รูปภาพที่แสดง",
+    "multicolumn": "หลายคอลัมน์",
+    "rich_text_section": "Rich Text"
   },
   "settings": {
     "alignment": "การจัดแนว",
@@ -493,7 +495,10 @@
     "product_card_carousel": "แสดงภาพสไลด์",
     "media_fit": "ปรับขนาดสื่อให้พอดี",
     "scroll_speed": "ระยะเวลาจนถึงการประกาศครั้งถัดไป",
-    "show_powered_by_shopify": "แสดง \"Powered by Shopify\""
+    "show_powered_by_shopify": "แสดงข้อความ \"ขับเคลื่อนโดย Shopify\"",
+    "seller_note_open_by_default": "เปิดหมายเหตุถึงผู้ขายตามค่าเริ่มต้น",
+    "gift_card_form": "แบบฟอร์มบัตรของขวัญ",
+    "add_to_cart_animation": "เพิ่มในตะกร้า"
   },
   "options": {
     "adapt_to_image": "ปรับตามรูปภาพ",
@@ -838,7 +843,6 @@
     "carousel": "ภาพสไลด์",
     "colors": "สี",
     "collection_page": "หน้าคอลเลกชัน",
-    "copyright_info": "ดูวิธี [แก้ไขคำชี้แจงเกี่ยวกับลิขสิทธิ์](https://help.shopify.com/manual/online-store/themes/customizing-themes/remove-powered-by-shopify-message)",
     "customer_account": "บัญชีผู้ใช้ของลูกค้า",
     "edit_empty_state_collection_in_theme_settings": "แก้ไขคอลเลกชันสถานะว่างใน [การตั้งค่าธีม](/editor?context=theme&category=search)",
     "grid_layout": "เลย์เอาต์แบบกริด",
@@ -868,7 +872,9 @@
     "resource_reference_product_variant_picker": "แสดงตัวเลือกสินค้าจากสินค้าหลัก",
     "product_media": "สื่อประกอบสินค้า",
     "resource_reference_product_media": "แสดงสื่อจากสินค้าหลัก",
-    "section_link": "ลิงก์ไปยังส่วน"
+    "section_link": "ลิงก์ไปยังส่วน",
+    "gift_card_form_description": "ลูกค้าสามารถส่งบัตรของขวัญไปยังอีเมลของผู้รับพร้อมข้อความส่วนตัวได้ [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "หัวเรื่อง"
   },
   "html_defaults": {
     "share_information_about_your": "<p>แชร์ข้อมูลเกี่ยวกับแบรนด์ของคุณให้ลูกค้าทราบ โดยอธิบายคุณสมบัติของสินค้า แชร์ประกาศ หรือกล่าวต้อนรับลูกค้าสู่ร้านค้าของคุณ</p>"
@@ -919,7 +925,7 @@
     "layout": "เลย์เอาต์",
     "links": "ลิงก์",
     "product": "สินค้า",
-    "product_list": "คอลเลกชันแนะนำ",
+    "product_list": "คอลเลกชันเด่น",
     "banners": "แบนเนอร์",
     "collections": "คอลเลกชัน",
     "custom": "กำหนดเอง",

@@ -33,7 +33,7 @@
     "product_cards": "商品卡",
     "primary_button": "主要按鈕",
     "secondary_button": "次要按鈕",
-    "popovers": "彈出視窗",
+    "popovers_and_modals": "彈出視窗和模態框",
     "buttons": "按鈕",
     "inputs": "輸入",
     "marquee": "跑馬燈",
@@ -95,7 +95,7 @@
     "product_grid_main": "商品網格",
     "product_image": "商品圖片",
     "product_information": "商品資訊",
-    "product_list": "精選系列",
+    "product_list": "精選商品系列",
     "product_review_stars": "檢視星評",
     "quantity": "數量",
     "row": "列",
@@ -151,9 +151,9 @@
     "page_layout": "頁面版面配置",
     "policy_list": "政策連結",
     "prices": "價格",
-    "products_carousel": "精選系列：輪播",
-    "products_editorial": "精選系列：編輯",
-    "products_grid": "精選系列：網格",
+    "products_carousel": "精選商品系列：輪播",
+    "products_editorial": "精選商品系列：編輯",
+    "products_grid": "精選商品系列：網格",
     "social_link": "社群媒體連結",
     "split_showcase": "分欄展示",
     "variant_pickers": "子類選擇器",
@@ -163,7 +163,9 @@
     "product_list_button": "「檢視全部」按鈕",
     "product_inventory": "產品庫存",
     "description": "說明",
-    "featured_image": "主要圖片"
+    "featured_image": "主要圖片",
+    "multicolumn": "多欄",
+    "rich_text_section": "RTF 文字"
   },
   "settings": {
     "alignment": "對齊方式",
@@ -492,8 +494,11 @@
     "media": "多媒體檔案",
     "product_card_carousel": "顯示輪播",
     "media_fit": "多媒體檔案最適大小",
-    "scroll_speed": "捲動到下一個公告",
-    "show_powered_by_shopify": "顯示「由 Shopify 提供技術支援」"
+    "scroll_speed": "至下一則公告時間",
+    "show_powered_by_shopify": "顯示「Shopify 技術支援」",
+    "gift_card_form": "禮品卡表單",
+    "seller_note_open_by_default": "預設向賣家開啟備註",
+    "add_to_cart_animation": "加入購物車"
   },
   "options": {
     "adapt_to_image": "配合圖片",
@@ -837,7 +842,6 @@
     "carousel": "輪播",
     "colors": "顏色",
     "collection_page": "商品系列頁面",
-    "copyright_info": "瞭解如何[編輯著作權聲明](https://help.shopify.com/manual/online-store/themes/customizing-themes/remove-powered-by-shopify-message)",
     "customer_account": "顧客帳號",
     "edit_empty_state_collection_in_theme_settings": "在 [佈景主題設定](/editor?context=theme&category=search) 中編輯空白狀態商品系列",
     "grid_layout": "網格式版面配置",
@@ -868,7 +872,9 @@
     "resource_reference_product_variant_picker": "顯示上層商品的子類",
     "resource_reference_product_media": "顯示上層商品的多媒體檔案",
     "product_media": "商品多媒體檔案",
-    "section_link": "區段連結"
+    "section_link": "區段連結",
+    "gift_card_form_description": "顧客將禮品卡傳送至收件人電子郵件時可附上個人化訊息。[瞭解詳情](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "標題"
   },
   "html_defaults": {
     "share_information_about_your": "<p>和顧客分享品牌資訊、描述商品、進行公告，或歡迎顧客光臨您的商店。</p>"
@@ -919,7 +925,7 @@
     "layout": "版面配置",
     "links": "連結",
     "product": "產品",
-    "product_list": "精選系列",
+    "product_list": "精選商品系列",
     "banners": "橫幅",
     "collections": "商品系列",
     "custom": "自訂",

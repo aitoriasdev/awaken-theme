@@ -223,7 +223,19 @@
     "page_placeholder_title": "Názov stránky",
     "page_placeholder_content": "Výberom stránky zobrazíte jej obsah.",
     "placeholder_image": "Obrázok zástupného objektu",
-    "shipping_policy": "Doprava sa vypočíta v pokladni."
+    "shipping_policy": "Doprava sa vypočíta v pokladni.",
+    "recipient_form_send_to": "Odoslať na",
+    "recipient_form_email_label": "E-mail príjemcu",
+    "recipient_form_email_label_my_email": "Môj e-mail",
+    "recipient_form_email_address": "E-mailová adresa príjemcu",
+    "recipient_form_name_label": "Meno príjemcu (voliteľné)",
+    "recipient_form_message": "Správa (voliteľné)",
+    "recipient_form_characters_used": "Použitých {{ used_chars }} znakov z {{ max_chars }}",
+    "recipient_form_send_on": "RRRR-MM-DD",
+    "recipient_form_send_on_label": "Dátum odoslania (voliteľné)",
+    "recipient_form_fields_visible": "Polia formulára príjemcu sú teraz viditeľné",
+    "recipient_form_fields_hidden": "Polia formulára príjemcu sú teraz skryté",
+    "recipient_form_error": "There was an error with the form submission"
   },
   "gift_cards": {
     "issued": {

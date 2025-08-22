@@ -35,7 +35,7 @@
     "inputs": "Syötteet",
     "primary_button": "Ensisijainen painike",
     "secondary_button": "Toissijainen painike",
-    "popovers": "Ponnahdusilmoitukset",
+    "popovers_and_modals": "Ponnahdusilmoitukset ja modaalit",
     "marquee": "Markiisi",
     "alternating_content_rows": "Vaihtelevat rivit",
     "pull_quote": "Nosto",
@@ -163,7 +163,9 @@
     "product_title": "Tuotteen nimi",
     "large_logo": "Suuri logo",
     "description": "Kuvaus",
-    "featured_image": "Esittelykuva"
+    "featured_image": "Esittelykuva",
+    "multicolumn": "Monisarake",
+    "rich_text_section": "Rich text"
   },
   "settings": {
     "alignment": "Tasaus",
@@ -493,7 +495,10 @@
     "show_second_image_on_hover": "Näytä toinen kuva osoitettaessa",
     "media_fit": "Median sovitus",
     "scroll_speed": "Aikaa seuraavaan ilmoitukseen",
-    "show_powered_by_shopify": "Näytä Powered by Shopify"
+    "show_powered_by_shopify": "Näytä Powered by Shopify",
+    "seller_note_open_by_default": "Avaa huomautus myyjälle oletusarvoisesti",
+    "gift_card_form": "Lahjakorttilomake",
+    "add_to_cart_animation": "Lisää ostoskoriin"
   },
   "options": {
     "adapt_to_image": "Sovita kuvaan",
@@ -867,7 +872,9 @@
     "resource_reference_product_variant_picker": "Esittää ylätason tuotteen versioita",
     "resource_reference_product_media": "Näyttää mediaa ylätason tuotteesta",
     "product_media": "Tuotemediat",
-    "section_link": "Osiolinkki"
+    "section_link": "Osiolinkki",
+    "gift_card_form_description": "Asiakkaat voivat lähettää lahjakortteja vastaanottajille sähköpostitse henkilökohtaisen viestin kera. [Lue lisää](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "Otsikko"
   },
   "html_defaults": {
     "share_information_about_your": "<p>Kerro brändiäsi koskevia tietoja asiakkaillesi. Kuvaile tuotetta, jaa ilmoituksia tai toivota asiakkaat tervetulleiksi kauppaasi.</p>"

@@ -213,7 +213,19 @@
     "store_owner_link_html": "Bạn có phải chủ cửa hàng không? <a href=\"{{ link }}\">Đăng nhập tại đây</a>",
     "shipping_discount_error": "Ưu đãi giảm giá vận chuyển được hiển thị tại trang thanh toán sau khi thêm địa chỉ",
     "discount_code_error": "Không thể áp dụng mã giảm giá cho giỏ hàng của bạn",
-    "shipping_policy": "Phí vận chuyển được tính khi thanh toán."
+    "shipping_policy": "Phí vận chuyển được tính khi thanh toán.",
+    "recipient_form_send_to": "Gửi đến",
+    "recipient_form_email_label": "Email của người nhận",
+    "recipient_form_email_label_my_email": "Email của tôi",
+    "recipient_form_email_address": "Địa chỉ email người nhận",
+    "recipient_form_name_label": "Tên người nhận (không bắt buộc)",
+    "recipient_form_message": "Tin nhắn (không bắt buộc)",
+    "recipient_form_characters_used": "Đã sử dụng {{ used_chars }}/{{ max_chars }} ký tự",
+    "recipient_form_send_on": "DD-MM-YYYY",
+    "recipient_form_send_on_label": "Ngày gửi (tùy chọn)",
+    "recipient_form_fields_visible": "Các trường biểu mẫu cho người nhận hiện đã được hiển thị",
+    "recipient_form_fields_hidden": "Các trường biểu mẫu cho người nhận hiện đã được ẩn",
+    "recipient_form_error": "Đã xảy ra lỗi khi gửi biểu mẫu"
   },
   "gift_cards": {
     "issued": {

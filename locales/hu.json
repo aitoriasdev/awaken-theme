@@ -213,7 +213,19 @@
     "discount_code_error": "A kedvezménykód nem érvényesíthető a kosaradon",
     "shipping_discount_error": "A szállítási kedvezmények a fizetéskor jelennek meg a cím megadását követően",
     "powered_by": "A bolt szolgáltatója:",
-    "store_owner_link_html": "Te vagy az áruház tulajdonosa? <a href=\"{{ link }}\">Jelentkezz be itt</a>"
+    "store_owner_link_html": "Te vagy az áruház tulajdonosa? <a href=\"{{ link }}\">Jelentkezz be itt</a>",
+    "recipient_form_send_to": "Címzett",
+    "recipient_form_email_label": "Címzett e-mail-címe",
+    "recipient_form_email_label_my_email": "Az e-mail-címem",
+    "recipient_form_email_address": "Címzett e-mail-címe",
+    "recipient_form_name_label": "Címzett neve (nem kötelező)",
+    "recipient_form_message": "Üzenet (nem kötelező)",
+    "recipient_form_characters_used": "{{ max_chars }} karakterből {{ used_chars }} felhasználva",
+    "recipient_form_send_on": "ÉÉÉÉ-HH-NN",
+    "recipient_form_send_on_label": "Küldés dátuma (nem kötelező)",
+    "recipient_form_fields_visible": "A kedvezményezettre vonatkozó űrlapmezők most láthatók",
+    "recipient_form_fields_hidden": "A kedvezményezettre vonatkozó űrlapmezők most el vannak rejtve",
+    "recipient_form_error": "Hiba történt az űrlap beküldése során"
   },
   "gift_cards": {
     "issued": {

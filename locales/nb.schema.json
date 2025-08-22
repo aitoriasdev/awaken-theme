@@ -8,6 +8,7 @@
     "icon": "Ikon",
     "logo_and_favicon": "Logo og favorittikon",
     "overlapping_blocks": "Overlappende blokker",
+    "rich_text_section": "Rik tekst",
     "product_buy_buttons": "Kjøp-knapper",
     "product_description": "Beskrivelse",
     "product_price": "Pris",
@@ -35,15 +36,15 @@
     "secondary_button": "Sekundær knapp",
     "buttons": "Knapper",
     "inputs": "Inndata",
-    "popovers": "Forgrunnsvinduer",
+    "popovers_and_modals": "Forgrunnsvinduer og modaler",
     "marquee": "Marquee",
     "alternating_content_rows": "Vekslende rader",
     "pull_quote": "Nøkkelsitat",
     "contact_form": "Kontaktskjema",
     "featured_product": "Produkthøydepunkter",
     "icons_with_text": "Ikoner med tekst",
-    "products_carousel": "Utvalgt kolleksjon: Karusell",
-    "products_grid": "Utvalgt kolleksjon: Rutenett",
+    "products_carousel": "Utvalgt samling: karusell",
+    "products_grid": "Utvalgt samling: rutenett",
     "jumbo_text": "Jumbotekst",
     "accelerated_checkout": "Hurtigkasse",
     "accordion": "Trekkspill",
@@ -98,7 +99,7 @@
     "product_grid_main": "Produktrutenett",
     "product_image": "Produktbilde",
     "product_information": "Produktinformasjon",
-    "product_list": "Utvalgt kolleksjon",
+    "product_list": "Utvalgt samling",
     "product_review_stars": "Stjerner i anmeldelse",
     "quantity": "Antall",
     "row": "Rad",
@@ -153,7 +154,7 @@
     "page_layout": "Sidelayout",
     "policy_list": "Koblinger til retningslinjer",
     "prices": "Priser",
-    "products_editorial": "Utvalgt kolleksjon: Redaksjonell",
+    "products_editorial": "Utvalgt samling: redaksjonell",
     "social_link": "Kobling til sosiale medier",
     "split_showcase": "Split-presentasjon",
     "variant_pickers": "Variantvelgere",
@@ -163,7 +164,8 @@
     "product_list_button": "«Vis alle»-knappen",
     "product_inventory": "Produktlager",
     "description": "Beskrivelse",
-    "featured_image": "Fremhevet bilde"
+    "featured_image": "Fremhevet bilde",
+    "multicolumn": "Flerkolonner"
   },
   "settings": {
     "alignment": "Justering",
@@ -491,9 +493,12 @@
     "show_second_image_on_hover": "Vis sekundærbilde når musepekeren beveges over",
     "media": "Medier",
     "product_card_carousel": "Vis karusell",
-    "media_fit": "Mediepassform",
-    "scroll_speed": "Rull til neste kunngjøring",
-    "show_powered_by_shopify": "Vis \"Powered by Shopify\""
+    "media_fit": "Medietilpasning",
+    "scroll_speed": "Tid til neste kunngjøring",
+    "show_powered_by_shopify": "Vis «Drevet av Shopify»",
+    "gift_card_form": "Gavekortskjema",
+    "seller_note_open_by_default": "Merknaden til selgeren skal åpnes som standard",
+    "add_to_cart_animation": "Legg i handlekurven"
   },
   "options": {
     "adapt_to_image": "Tilpass til bilde",
@@ -838,7 +843,6 @@
     "carousel": "Karusell",
     "colors": "Farger",
     "collection_page": "Samlingside",
-    "copyright_info": "Finn ut hvordan du [redigerer opphavsrettserklæringen](https://help.shopify.com/manual/online-store/themes/customizing-themes/remove-powered-by-shopify-message)",
     "customer_account": "Kundekonto",
     "edit_empty_state_collection_in_theme_settings": "Rediger samling i tom tilstand i [temainnstillinger](/editor?context=theme&category=search)",
     "grid_layout": "Layout i rutenett",
@@ -868,7 +872,9 @@
     "resource_reference_product_variant_picker": "Viser varianter fra overordnet produkt",
     "resource_reference_product_media": "Viser medier fra overordnet produkt",
     "product_media": "Produktmedier",
-    "section_link": "Seksjonslenke"
+    "section_link": "Seksjonslenke",
+    "gift_card_form_description": "Kunder kan sende gavekort til mottakerens e-post med en personlig melding. [Finn ut mer](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "Overskrift"
   },
   "html_defaults": {
     "share_information_about_your": "<p>Del informasjon om merkevaren din med kundene. Beskriv et produkt, gjør kunngjøringer eller ønsk kundene velkommen til butikken.</p>"
@@ -910,7 +916,7 @@
     "hover_effects": "Gjelder produkt- og samlingskort"
   },
   "categories": {
-    "product_list": "Utvalgt kolleksjon",
+    "product_list": "Utvalgt samling",
     "basic": "Basic",
     "collection": "Samling",
     "collection_list": "Liste over samlinger",

@@ -213,7 +213,19 @@
     "page_placeholder_title": "頁面標題",
     "page_placeholder_content": "選取一個頁面，即可顯示其內容。",
     "placeholder_image": "佔位符圖片",
-    "shipping_policy": "結帳時計算運費。"
+    "shipping_policy": "結帳時計算運費。",
+    "recipient_form_send_to": "傳送至",
+    "recipient_form_email_label": "收件者電子郵件",
+    "recipient_form_email_label_my_email": "我的電子郵件",
+    "recipient_form_email_address": "收件者電子郵件地址",
+    "recipient_form_name_label": "收件者姓名 (選填)",
+    "recipient_form_characters_used": "已使用 {{ used_chars }} 個字元/上限 {{ max_chars }} 個字元",
+    "recipient_form_send_on": "YYYY-MM-DD",
+    "recipient_form_send_on_label": "傳送時間 (選填)",
+    "recipient_form_message": "訊息 (選填)",
+    "recipient_form_fields_visible": "收件人表單欄位現已可見",
+    "recipient_form_fields_hidden": "收件人表單欄位現已隱藏",
+    "recipient_form_error": "提交表單時發生錯誤"
   },
   "gift_cards": {
     "issued": {

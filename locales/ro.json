@@ -218,7 +218,19 @@
       "one": "{{ count }} rămas",
       "other": "{{ count }} rămas",
       "few": "{{ count }} rămas"
-    }
+    },
+    "recipient_form_send_to": "Destinatar",
+    "recipient_form_email_label": "Adresa de e-mail a destinatarului",
+    "recipient_form_email_label_my_email": "Adresa mea de e-mail",
+    "recipient_form_email_address": "Adresa de e-mail a destinatarului",
+    "recipient_form_name_label": "Numele destinatarului (opțional)",
+    "recipient_form_message": "Mesaj (opțional)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} caractere folosite",
+    "recipient_form_send_on": "AAAA-LL-ZZ",
+    "recipient_form_send_on_label": "Data trimiterii (opțional)",
+    "recipient_form_fields_visible": "Câmpurile formularului pentru destinatar sunt acum vizibile",
+    "recipient_form_fields_hidden": "Câmpurile formularului pentru destinatar sunt acum ascunse",
+    "recipient_form_error": "A apărut o eroare la trimiterea formularului"
   },
   "gift_cards": {
     "issued": {

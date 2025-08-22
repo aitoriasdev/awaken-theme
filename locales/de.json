@@ -213,7 +213,19 @@
     "powered_by": "Dieser Shop wird unterstützt werden von",
     "store_owner_link_html": "Bist du der Shop-Inhaber? <a href=\"{{ link }}\">Hier einloggen</a>",
     "shipping_discount_error": "Versandrabatte werden beim Checkout angezeigt, nachdem die Adresse hinzugefügt wurde",
-    "discount_code_error": "Rabattcode kann nicht auf den Warenkorb angewendet werden"
+    "discount_code_error": "Rabattcode kann nicht auf den Warenkorb angewendet werden",
+    "recipient_form_send_to": "Senden an",
+    "recipient_form_email_label": "E-Mail-Adresse des Empfängers",
+    "recipient_form_email_label_my_email": "Meine E-Mail-Adresse",
+    "recipient_form_email_address": "Empfänger-E-Mail-Adresse",
+    "recipient_form_name_label": "Name des Empfängers (optional)",
+    "recipient_form_message": "Nachricht (optional)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} Zeichen verwendet",
+    "recipient_form_send_on": "JJJJ-MM-TT",
+    "recipient_form_send_on_label": "Senden am (optional)",
+    "recipient_form_fields_visible": "Empfängerformularfelder sind jetzt sichtbar.",
+    "recipient_form_fields_hidden": "Empfängerformularfelder sind jetzt ausgeblendet.",
+    "recipient_form_error": "Beim Absenden des Formulars ist ein Fehler aufgetreten."
   },
   "gift_cards": {
     "issued": {

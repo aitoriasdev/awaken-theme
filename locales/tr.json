@@ -213,7 +213,19 @@
     "inventory_low_stock_show_count": {
       "one": "{{ count }} kaldı",
       "other": "{{ count }} kaldı"
-    }
+    },
+    "recipient_form_send_to": "Şuraya gönder:",
+    "recipient_form_email_label": "Alıcının e-posta adresi",
+    "recipient_form_email_label_my_email": "E-posta adresim",
+    "recipient_form_email_address": "Alıcı e-posta adresi",
+    "recipient_form_name_label": "Alıcı adı (isteğe bağlı)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} karakter kullanıldı",
+    "recipient_form_send_on": "GG.AA.YYYY",
+    "recipient_form_send_on_label": "Şu tarihte gönder (isteğe bağlı)",
+    "recipient_form_message": "Mesaj (isteğe bağlı)",
+    "recipient_form_fields_visible": "Alıcı form alanları artık görünür",
+    "recipient_form_fields_hidden": "Alıcı form alanları artık gizli",
+    "recipient_form_error": "Form gönderimi ile ilgili bir hata oluştu"
   },
   "gift_cards": {
     "issued": {

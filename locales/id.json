@@ -213,7 +213,19 @@
     "shipping_policy": "Biaya pengiriman dihitung saat checkout.",
     "shipping_discount_error": "Diskon biaya pengiriman akan ditampilkan saat checkout setelah menambahkan alamat",
     "powered_by": "Toko ini didukung oleh",
-    "store_owner_link_html": "Anda pemilik toko? <a href=\"{{ link }}\">Login di sini</a>"
+    "store_owner_link_html": "Anda pemilik toko? <a href=\"{{ link }}\">Login di sini</a>",
+    "recipient_form_send_to": "Kirim ke",
+    "recipient_form_email_label": "Email penerima",
+    "recipient_form_email_label_my_email": "Email saya",
+    "recipient_form_email_address": "Alamat email penerima",
+    "recipient_form_name_label": "Nama penerima (opsional)",
+    "recipient_form_message": "Pesan (opsional)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} karakter digunakan",
+    "recipient_form_send_on": "TTTT-BB-HH",
+    "recipient_form_send_on_label": "Kirim pada (opsional)",
+    "recipient_form_fields_visible": "Kolom formulir penerima sekarang ditampilkan",
+    "recipient_form_fields_hidden": "Kolom formulir penerima sekarang disembunyikan",
+    "recipient_form_error": "Terjadi kesalahan saat pengiriman formulir"
   },
   "gift_cards": {
     "issued": {
@@ -221,7 +233,7 @@
       "title": "Ini dia voucher senilai {{ value }} Anda untuk {{ shop }}!",
       "subtext": "Voucher Anda",
       "shop_link": "Kunjungi toko online",
-      "add_to_apple_wallet": "Tambahkan ke Apple Wallet",
+      "add_to_apple_wallet": "Tambahkan ke Dompet Apple",
       "qr_image_alt": "Kode QR — pindai untuk menukarkan voucher",
       "copy_code": "Salin kode voucher",
       "expiration_date": "Kedaluwarsa pada {{ expires_on }}",

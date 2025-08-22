@@ -223,7 +223,19 @@
     "store_owner_link_html": "Вы владелец магазина? <a href=\"{{ link }}\">Войдите здесь</a>",
     "shipping_discount_error": "Скидки на доставку отображаются при оформлении и оплате заказа после добавления адреса",
     "discount_code_error": "Код скидки не может быть применен к вашей корзине",
-    "shipping_policy": "Стоимость доставки рассчитывается при оформлении заказа."
+    "shipping_policy": "Стоимость доставки рассчитывается при оформлении заказа.",
+    "recipient_form_send_to": "Куда отправить",
+    "recipient_form_email_label": "Электронный адрес получателя",
+    "recipient_form_email_label_my_email": "Мой электронный адрес",
+    "recipient_form_email_address": "Адрес электронной почты получателя",
+    "recipient_form_name_label": "Имя получателя (необязательно)",
+    "recipient_form_message": "Сообщение (необязательно)",
+    "recipient_form_characters_used": "Использовано символов: {{ used_chars }}/{{ max_chars }}",
+    "recipient_form_send_on": "ГГГГ-ММ-ДД",
+    "recipient_form_send_on_label": "Дата отправки (необязательно)",
+    "recipient_form_fields_visible": "Поля формы получателя теперь отображаются",
+    "recipient_form_fields_hidden": "Поля формы получателя теперь скрыты",
+    "recipient_form_error": "При отправке формы возникла ошибка"
   },
   "gift_cards": {
     "issued": {

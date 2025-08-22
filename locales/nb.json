@@ -213,7 +213,19 @@
       "other": "{{ count }} igjen"
     },
     "powered_by": "Denne butikken skal bli drevet av",
-    "store_owner_link_html": "Er du butikkeieren? <a href=\"{{ link }}\">Logg inn her</a>"
+    "store_owner_link_html": "Er du butikkeieren? <a href=\"{{ link }}\">Logg inn her</a>",
+    "recipient_form_send_to": "Send til",
+    "recipient_form_email_label": "Mottakerens e-postadresse",
+    "recipient_form_email_label_my_email": "Min e-postadresse",
+    "recipient_form_email_address": "Mottakerens e-postadresse",
+    "recipient_form_name_label": "Mottakerens navn (valgfritt)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} tegn brukt",
+    "recipient_form_send_on": "DD.MM.ÅÅÅÅ",
+    "recipient_form_send_on_label": "Send den (valgfritt)",
+    "recipient_form_message": "Melding (valgfritt)",
+    "recipient_form_fields_visible": "Feltene i mottakerskjemaet er nå synlige",
+    "recipient_form_fields_hidden": "Feltene i mottakerskjemaet er nå skjult",
+    "recipient_form_error": "Det oppsto en feil ved innsendingen av skjemaet"
   },
   "gift_cards": {
     "issued": {

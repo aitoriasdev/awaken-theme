@@ -14,6 +14,7 @@
     "video": "Film",
     "colors": "Kolory",
     "overlapping_blocks": "Nakładające się bloki",
+    "rich_text_section": "Tekst sformatowany",
     "product_variant_picker": "Selektor wariantów",
     "slideshow_controls": "Elementy sterujące pokazem slajdów",
     "size": "Rozmiar",
@@ -35,7 +36,7 @@
     "inputs": "Dane wejściowe",
     "primary_button": "Przycisk główny",
     "secondary_button": "Przycisk dodatkowy",
-    "popovers": "Wyskakujące okienka",
+    "popovers_and_modals": "Wyskakujące okienka i modały",
     "marquee": "Baner",
     "alternating_content_rows": "Naprzemienne wiersze",
     "pull_quote": "Cytat typu pull",
@@ -163,7 +164,8 @@
     "product_inventory": "Zapas produktu",
     "pills": "Przyciski",
     "description": "Opis",
-    "featured_image": "Wyróżniony obraz"
+    "featured_image": "Wyróżniony obraz",
+    "multicolumn": "Wielokolumnowy"
   },
   "settings": {
     "autoplay": "Autoodtwarzanie",
@@ -493,7 +495,10 @@
     "product_card_carousel": "Wyświetl karuzelę",
     "media_fit": "Dopasowanie multimediów",
     "scroll_speed": "Czas do następnego ogłoszenia",
-    "show_powered_by_shopify": "Pokaż \"Powered by Shopify\""
+    "show_powered_by_shopify": "Wyświetl „Technologia Shopify”",
+    "gift_card_form": "Formularz karty prezentowej",
+    "seller_note_open_by_default": "Domyślnie otwórz uwagę dla sprzedawcy",
+    "add_to_cart_animation": "Dodaj do koszyka"
   },
   "options": {
     "adapt_to_image": "Dostosuj do obrazu",
@@ -837,7 +842,6 @@
     "carousel": "Karuzela",
     "colors": "Kolory",
     "collection_page": "Strona kolekcji",
-    "copyright_info": "Dowiedz się, jak [edytować Twoje oświadczenie o prawach autorskich](https://help.shopify.com/manual/online-store/themes/customizing-themes/remove-powered-by-shopify-message)",
     "customer_account": "Konto klienta",
     "edit_empty_state_collection_in_theme_settings": "Edytuj kolekcję pustych stanów w [ustawieniach szablonu](/editor?context=theme&category=search)",
     "home_page": "Strona główna",
@@ -868,7 +872,9 @@
     "resource_reference_product_variant_picker": "Wyświetla warianty z produktu nadrzędnego",
     "resource_reference_product_media": "Wyświetla multimedia z produktu nadrzędnego",
     "product_media": "Multimedia produktu",
-    "section_link": "Link sekcji"
+    "section_link": "Link sekcji",
+    "gift_card_form_description": "Klienci mogą wysyłać karty prezentowe na adres e-mail odbiorcy wraz z osobistą wiadomością. [Dowiedz się więcej](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "Nagłówek"
   },
   "html_defaults": {
     "share_information_about_your": "<p>Udostępnij klientom informacje o swojej marce. Opisz produkt, udostępnij ogłoszenia lub przywitaj klientów w swoim sklepie.</p>"

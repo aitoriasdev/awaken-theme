@@ -14,6 +14,7 @@
     "video": "Video",
     "colors": "Renkler",
     "overlapping_blocks": "Çakışan bloklar",
+    "rich_text_section": "Zengin metin",
     "product_variant_picker": "Varyasyon seçici",
     "slideshow_controls": "Slayt gösterisi denetimleri",
     "size": "Boyut",
@@ -35,13 +36,13 @@
     "inputs": "Girdiler",
     "primary_button": "Birincil düğme",
     "secondary_button": "İkincil düğme",
-    "popovers": "Popover",
+    "popovers_and_modals": "Popover ve modallar",
     "pull_quote": "Alıntı",
     "contact_form": "İletişim formu",
     "featured_product": "Ürün vurgusu",
     "icons_with_text": "Metin içeren simgeler",
     "marquee": "Kayan yazı",
-    "products_carousel": "Öne çıkan koleksiyon: Carousel",
+    "products_carousel": "Öne çıkan koleksiyon: Döngü",
     "products_grid": "Öne çıkan koleksiyon: Izgara",
     "alternating_content_rows": "Sırayla değişen satırlar",
     "product_list": "Öne çıkan koleksiyon",
@@ -163,7 +164,8 @@
     "product_inventory": "Ürün envanteri",
     "pills": "Seçenekler",
     "description": "Açıklama",
-    "featured_image": "Öne çıkan görsel"
+    "featured_image": "Öne çıkan görsel",
+    "multicolumn": "Çok sütunlu"
   },
   "settings": {
     "autoplay": "Otomatik oynatma",
@@ -492,8 +494,11 @@
     "product_card_carousel": "Döngüyü göster",
     "show_second_image_on_hover": "Üzerine gelindiğinde ikinci görseli göster",
     "media_fit": "Medya sığdırma",
-    "scroll_speed": "Sonraki duyuruya kaydır",
-    "show_powered_by_shopify": "\"Shopify tarafından desteklenmektedir\" ibaresini göster"
+    "scroll_speed": "Sonraki duyuruya kalan süre",
+    "show_powered_by_shopify": "\"Shopify tarafından desteklenmektedir\" ibaresini göster",
+    "seller_note_open_by_default": "Varsayılan olarak satıcıya notu aç",
+    "gift_card_form": "Hediye kartı formu",
+    "add_to_cart_animation": "Sepete ekle"
   },
   "options": {
     "adapt_to_image": "Görsele uyarla",
@@ -867,7 +872,9 @@
     "resource_reference_product_variant_picker": "Ana üründeki varyasyonları görüntüler",
     "resource_reference_product_media": "Ana üründeki medyayı görüntüler",
     "product_media": "Ürün medyası",
-    "section_link": "Bölüm bağlantısı"
+    "section_link": "Bölüm bağlantısı",
+    "gift_card_form_description": "Müşteriler kişisel mesaj ekleyerek alıcının e-posta adresine hediye kartı gönderebilir. [Daha fazla bilgi edinin](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "Başlık"
   },
   "html_defaults": {
     "share_information_about_your": "<p>Müşterilerinizle markanız hakkında bilgi paylaşın. Ürün açıklaması girin, duyuru paylaşın veya mağazanıza gelen müşterileri karşılayın.</p>"

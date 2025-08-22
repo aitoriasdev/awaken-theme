@@ -35,7 +35,7 @@
     "secondary_button": "Sekundär knapp",
     "buttons": "Knappar",
     "inputs": "Inmatningar",
-    "popovers": "Popovers",
+    "popovers_and_modals": "Popovers och modaler",
     "marquee": "Marquee",
     "pull_quote": "Citat",
     "contact_form": "Kontaktformulär",
@@ -163,7 +163,9 @@
     "large_logo": "Stor logotyp",
     "product_inventory": "Produktlager",
     "description": "Beskrivning",
-    "featured_image": "Utvald bild"
+    "featured_image": "Utvald bild",
+    "multicolumn": "Flerkolumn",
+    "rich_text_section": "RTF"
   },
   "settings": {
     "alignment": "Justering",
@@ -493,7 +495,10 @@
     "product_card_carousel": "Visa karusell",
     "media_fit": "Mediaanpassning",
     "scroll_speed": "Tid till nästa meddelande",
-    "show_powered_by_shopify": "Visa ”Drivs av Shopify”"
+    "show_powered_by_shopify": "Visa ”Drivs av Shopify”",
+    "seller_note_open_by_default": "Öppna anteckning till säljare som standard",
+    "gift_card_form": "Presentkortsformulär",
+    "add_to_cart_animation": "Lägg i varukorgen"
   },
   "options": {
     "adapt_to_image": "Anpassa till bild",
@@ -867,7 +872,9 @@
     "resource_reference_product_variant_picker": "Visar varianter från överordnad produkt",
     "resource_reference_product_media": "Visar media från överordnad produkt",
     "product_media": "Produktmedia",
-    "section_link": "Länk till avsnitt"
+    "section_link": "Länk till avsnitt",
+    "gift_card_form_description": "Kunder kan skicka presentkort till en mottagares e-postadress med ett personligt meddelande. [Mer information](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "Rubrik"
   },
   "html_defaults": {
     "share_information_about_your": "<p>Dela information om ditt varumärke med dina kunder. Beskriv en produkt, gör tillkännagivanden eller välkomna kunder till din butik.</p>"

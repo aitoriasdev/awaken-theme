@@ -14,6 +14,7 @@
     "video": "Vidéo",
     "colors": "Couleurs",
     "overlapping_blocks": "Chevauchement de blocs",
+    "rich_text_section": "Texte enrichi",
     "product_variant_picker": "Sélecteur de variante",
     "slideshow_controls": "Contrôles du diaporama",
     "size": "Taille",
@@ -33,7 +34,7 @@
     "product_cards": "Cartes de produit",
     "primary_button": "Bouton primaire",
     "secondary_button": "Bouton secondaire",
-    "popovers": "Popovers",
+    "popovers_and_modals": "Popovers et modales",
     "buttons": "Boutons",
     "inputs": "Entrées",
     "marquee": "Marquee",
@@ -151,9 +152,9 @@
     "policy_list": "Liens vers les politiques",
     "prices": "Prix",
     "product_list_button": "Bouton Afficher tout",
-    "products_carousel": "Collection en vedette : Carrousel",
-    "products_editorial": "Collection en vedette : Éditorial",
-    "products_grid": "Collection en vedette : Grille",
+    "products_carousel": "Collection en vedette : Carrousel",
+    "products_editorial": "Collection en vedette : Éditorial",
+    "products_grid": "Collection en vedette : Grille",
     "social_link": "Lien de réseau social",
     "split_showcase": "Diviser la présentation",
     "variant_pickers": "Sélecteurs de variante",
@@ -163,7 +164,8 @@
     "large_logo": "Grand logo",
     "product_inventory": "Stock de produits",
     "description": "Description",
-    "featured_image": "Image vedette"
+    "featured_image": "Image vedette",
+    "multicolumn": "Multi-colonnes"
   },
   "settings": {
     "autoplay": "Jeu automatique",
@@ -492,8 +494,11 @@
     "product_card_carousel": "Afficher le carrousel",
     "show_second_image_on_hover": "Afficher la deuxième image au passage de la souris",
     "media_fit": "Taille des supports multimédia",
-    "scroll_speed": "Délai avant l’annonce suivante",
-    "show_powered_by_shopify": "Afficher « Propulsé par Shopify »"
+    "scroll_speed": "Temps jusqu'à la prochaine annonce",
+    "show_powered_by_shopify": "Afficher « Propulsé par Shopify »",
+    "gift_card_form": "Formulaire de carte-cadeau",
+    "seller_note_open_by_default": "Ouvrir le commentaire au vendeur par défaut",
+    "add_to_cart_animation": "Ajouter au panier"
   },
   "options": {
     "adapt_to_image": "Adapter à l’image",
@@ -838,7 +843,6 @@
     "carousel": "Carrousel",
     "colors": "Couleurs",
     "collection_page": "Page de collection",
-    "copyright_info": "Découvrez comment [modifier votre déclaration de droits d’auteur](https://help.shopify.com/manual/online-store/themes/customizing-themes/remove-powered-by-shopify-message)",
     "customer_account": "Compte client",
     "edit_empty_state_collection_in_theme_settings": "Modifier la collection par défaut dans les [paramètres de thèmes ](/editor?context=theme&category=search)",
     "grid_layout": "Mise en page en grille",
@@ -868,7 +872,9 @@
     "resource_reference_product_variant_picker": "Affiche les variantes à partir du produit parent",
     "resource_reference_product_media": "Affiche les supports multimédias du produit parent",
     "product_media": "Support multimédia du produit",
-    "section_link": "Lien vers la section"
+    "section_link": "Lien vers la section",
+    "gift_card_form_description": "Les clients peuvent envoyer des cartes-cadeaux à l'adresse e-mail d'un destinataire avec un message personnel. [En savoir plus](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "Titre"
   },
   "html_defaults": {
     "share_information_about_your": "<p>Partagez des informations sur votre marque. Décrivez un produit, partagez des annonces ou souhaitez la bienvenue à vos clients dans votre boutique.</p>"

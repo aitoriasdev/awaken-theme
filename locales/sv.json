@@ -213,7 +213,19 @@
     "inventory_low_stock_show_count": {
       "one": "{{ count }} kvar",
       "other": "{{ count }} kvar"
-    }
+    },
+    "recipient_form_send_to": "Skicka till",
+    "recipient_form_email_label": "Mottagarens e-postadress",
+    "recipient_form_email_label_my_email": "Min e-postadress",
+    "recipient_form_email_address": "Mottagarens e-postadress",
+    "recipient_form_name_label": "Mottagarens namn (valfritt)",
+    "recipient_form_message": "Meddelande (valfritt)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} tecken har använts",
+    "recipient_form_send_on": "ÅÅÅÅ-MM-DD",
+    "recipient_form_send_on_label": "Skicka den (valfritt)",
+    "recipient_form_fields_visible": "Formulärfälten för mottagare är nu synliga",
+    "recipient_form_fields_hidden": "Formulärfälten för mottagare är nu dolda",
+    "recipient_form_error": "Ett fel uppstod när formuläret skulle skickas in"
   },
   "gift_cards": {
     "issued": {

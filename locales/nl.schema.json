@@ -35,13 +35,13 @@
     "inputs": "Invoer",
     "primary_button": "Primaire knop",
     "secondary_button": "Secundaire knop",
-    "popovers": "Pop-overs",
+    "popovers_and_modals": "Pop-overs en modals",
     "marquee": "Marquee",
     "alternating_content_rows": "Afwisselende rijen",
     "product_list": "Uitgelichte collectie",
     "spacer": "Opvulling",
-    "products_carousel": "Uitgelichte collectie: Carrousel",
-    "products_grid": "Uitgelichte collectie: Raster",
+    "products_carousel": "Uitgelichte collectie: carrousel",
+    "products_grid": "Uitgelichte collectie: grid",
     "pull_quote": "Citaat ophalen",
     "contact_form": "Contactformulier",
     "featured_product": "Uitgelichte producten",
@@ -155,7 +155,7 @@
     "policy_list": "Links naar beleid",
     "prices": "Prijzen",
     "product_list_button": "Knop Alles weergeven",
-    "products_editorial": "Uitgelichte collectie: Redactioneel",
+    "products_editorial": "Uitgelichte collectie: redactioneel",
     "social_link": "Socialmedia-link",
     "split_showcase": "Split showcase",
     "variant_pickers": "Variantkiezers",
@@ -163,7 +163,9 @@
     "large_logo": "Groot logo",
     "product_inventory": "Productvoorraad",
     "description": "Beschrijving",
-    "featured_image": "Uitgelichte afbeelding"
+    "featured_image": "Uitgelichte afbeelding",
+    "multicolumn": "Meerkolommig",
+    "rich_text_section": "Tekst met opmaak"
   },
   "settings": {
     "autoplay": "Automatisch afspelen",
@@ -492,8 +494,11 @@
     "media": "Media",
     "product_card_carousel": "Carrousel weergeven",
     "media_fit": "Mediafit",
-    "scroll_speed": "Tijd tot de volgende aankondiging",
-    "show_powered_by_shopify": "\"Powered by Shopify\" weergeven"
+    "scroll_speed": "Tijd tot volgende aankondiging",
+    "show_powered_by_shopify": "'Powered by Shopify' weergeven",
+    "seller_note_open_by_default": "Notitie aan verkoper standaard openen",
+    "gift_card_form": "Cadeaukaartformulier",
+    "add_to_cart_animation": "In winkelwagen"
   },
   "options": {
     "adapt_to_image": "Aanpassen aan afbeelding",
@@ -839,7 +844,6 @@
     "carousel": "Carrousel",
     "colors": "Kleuren",
     "collection_page": "Collectiepagina",
-    "copyright_info": "Leer hoe je [je auteursrechtverklaring bewerkt](https://help.shopify.com/manual/online-store/themes/customizing-themes/remove-powered-by-shopify-message)",
     "customer_account": "Klantaccount",
     "edit_empty_state_collection_in_theme_settings": "Bewerk collectie lege staat in [thema-instellingen](/editor?context=theme&category=search)",
     "grid_layout": "Grid-indeling",
@@ -868,7 +872,9 @@
     "resource_reference_product_variant_picker": "Geeft varianten uit bovenliggend product weer",
     "resource_reference_product_media": "Geeft media van bovenliggend product weer",
     "product_media": "Productmedia",
-    "section_link": "Sectielink"
+    "section_link": "Sectielink",
+    "gift_card_form_description": "Klanten kunnen cadeaubonnen met een persoonlijk bericht naar het e-mailadres van een ontvanger sturen. [Meer informatie](https://help.shopify.com/manual/products/gift-card-products)",
+    "heading": "Koptekst"
   },
   "html_defaults": {
     "share_information_about_your": "<p>Deel informatie over je merk met klanten. Beschrijf een product, doe aankondigingen of verwelkom klanten in je winkel.</p>"
