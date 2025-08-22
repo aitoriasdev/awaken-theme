@@ -37,6 +37,22 @@
   }
 }
 
+.facets {
+  .facets__summary {
+    font-size: var(--font-h5--size);
+  }
+}
+
+.swatch--image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  height: 60px;
+  resize: both;
+  width: 60px;
+}
+
 .policy_list li a:hover ,
 .paragraph a:hover {
   text-decoration: underline;

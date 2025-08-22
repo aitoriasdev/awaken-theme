@@ -55,9 +55,16 @@ export class AddToCartComponent extends Component {
    * @param {MouseEvent & {target: HTMLElement}} event - The click event.
    */
   handleClick(event) {
+    const form = this.closest('form');
+    if (!form?.checkValidity()) return;
+
     this.animateAddToCart();
 
-    if (!event.target.closest('.quick-add-modal')) this.#animateFlyToCart();
+    const animationEnabled = this.dataset.addToCartAnimation === 'true';
+
+    if (animationEnabled && !event.target.closest('.quick-add-modal')) {
+      this.#animateFlyToCart();
+    }
   }
 
   #preloadImage = () => {
@@ -190,7 +197,9 @@ class ProductFormComponent extends Component {
       .then((response) => response.json())
       .then((response) => {
         if (response.status) {
-          window.dispatchEvent(new CartErrorEvent(this.id, response.message));
+          this.dispatchEvent(
+            new CartErrorEvent(form.getAttribute('id') || '', response.message, response.description, response.errors)
+          );
 
           if (!addToCartTextError) return;
           addToCartTextError.classList.remove('hidden');
