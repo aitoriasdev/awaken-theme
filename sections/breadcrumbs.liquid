@@ -4,123 +4,192 @@
 {% endcomment %}
 {% unless template == 'index' or template == 'cart' or template == '404' or template == 'list-collections' %}
   <div class="section section--{{ section.settings.section_width }}">
-    <nav class="spacing-style breadcrumbs" role="navigation" aria-label="Breadcrumb" style="{% render 'spacing-padding', settings: section.settings %};">
+    <nav class="breadcrumbs" role="navigation" aria-label="{{ 'breadcrumbs.home' | t}}">
       <ol class="breadcrumbs__list">
+
+        <!-- Home -->
         <li class="breadcrumbs__item">
-          <a href="{{ routes.root_url }}" class="breadcrumbs__link">{{ 'breadcrumbs.home' | t}}</a>
+          <a href="{{ routes.root_url }}" class="breadcrumbs__link">
+            {{ 'breadcrumbs.home' | t}}
+          </a>
         </li>
-        {% if template == 'page' %}
-          <li class="breadcrumbs__item">
-            <a href="{{ page.url }}" class="breadcrumbs__link" aria-current="page">
-              {{ page.title }}
-            </a>
+
+        {% if template contains 'collection' %}
+          {% assign breadcrumb_collections = collection.metafields.custom.breadcrumb_collections.value %}
+
+          {% if breadcrumb_collections != blank %}
+            {% for bc in breadcrumb_collections %}
+              <li class="breadcrumbs__item">
+                <a href="{{ bc.url }}" class="breadcrumbs__link">
+                  {{ bc.title }}
+                </a>
+              </li>
+            {% endfor %}
+          {% endif %}
+
+          <li class="breadcrumbs__item" aria-current="page">
+            {{ collection.title }}
           </li>
-        {% elsif template == 'collection' %}
-          <li class="breadcrumbs__item">
-            <a href="{{ collection.url }}" class="breadcrumbs__link" aria-current="page">
-              {{ collection.title }}
-            </a>
-          </li>
-        {% elsif template == 'product' %}
-          {% if collection %}
+
+        {% elsif template contains 'product' %}
+          {% assign breadcrumb_collections = product.metafields.custom.breadcrumb_collections.value %}
+
+          {% if breadcrumb_collections != blank %}
+            {% for bc in breadcrumb_collections %}
+              <li class="breadcrumbs__item">
+                <a href="{{ bc.url }}" class="breadcrumbs__link">
+                  {{ bc.title }}
+                </a>
+              </li>
+            {% endfor %}
+          {% elsif collection %}
             <li class="breadcrumbs__item">
               <a href="{{ collection.url }}" class="breadcrumbs__link">
                 {{ collection.title }}
               </a>
             </li>
           {% endif %}
-          <li class="breadcrumbs__item">
-            <a href="{{ product.url }}" class="breadcrumbs__link" aria-current="page">
-              {{ product.title }}
-            </a>
+
+          <!-- Product -->
+          <li class="breadcrumbs__item" aria-current="page">
+            {{ product.title }}
           </li>
-        {% elsif template == 'blog' %}
-          <li class="breadcrumbs__item">
-            <a href="{{ blog.url }}" class="breadcrumbs__link" aria-current="page">
-              {{ blog.title }}
-            </a>
+
+        {% elsif template contains 'page' %}
+          <!-- Static Page -->
+          <li class="breadcrumbs__item" aria-current="page">
+            {{ page.title }}
           </li>
-        {% elsif template == 'article' %}
+
+        {% elsif template contains 'blog' %}
+          <!-- Blog -->
+          <li class="breadcrumbs__item" aria-current="page">
+            {{ blog.title }}
+          </li>
+
+        {% elsif template contains 'article' %}
+          <!-- Blog Article -->
           <li class="breadcrumbs__item">
             <a href="{{ blog.url }}" class="breadcrumbs__link">
               {{ blog.title }}
             </a>
           </li>
-          <li class="breadcrumbs__item">
-            <a href="{{ article.url }}" class="breadcrumbs__link" aria-current="page">
-              {{ article.title }}
-            </a>
+          <li class="breadcrumbs__item" aria-current="page">
+            {{ article.title }}
           </li>
         {% endif %}
       </ol>
     </nav>
-  </div>
 
-  <!-- JSON-LD structured data for Google BreadcrumbList -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": {{ 'breadcrumbs.home' | t | json }},
-          "item": {{ shop.url | json }}
-        }{% comment %} Additional breadcrumb items: {% endcomment %}
-        {% if template == 'page' %}
-          , {
-            "@type": "ListItem",
-            "position": 2,
-            "name": {{ page.title | json }},
-            "item": {{ page.url | json }}
-          }
-        {% elsif template == 'collection' %}
-          , {
-            "@type": "ListItem",
-            "position": 2,
-            "name": {{ collection.title | json }},
-            "item": {{ collection.url | json }}
-          }
-        {% elsif template == 'product' %}
-          {% if collection %}
-            , {
-              "@type": "ListItem",
-              "position": 2,
-              "name": {{ collection.title | json }},
-              "item": {{ collection.url | json }}
-            }
-          {% endif %}
-          , {
-            "@type": "ListItem",
-            "position": {% if collection %}3{% else %}2{% endif %},
-            "name": {{ product.title | json }},
-            "item": {{ product.url | json }}
-          }
-        {% elsif template == 'blog' %}
-          , {
-            "@type": "ListItem",
-            "position": 2,
-            "name": {{ blog.title | json }},
-            "item": {{ blog.url | json }}
-          }
-        {% elsif template == 'article' %}
-          , {
-            "@type": "ListItem",
-            "position": 2,
-            "name": {{ blog.title | json }},
-            "item": {{ blog.url | json }}
-          },
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
           {
             "@type": "ListItem",
-            "position": 3,
-            "name": {{ article.title | json }},
-            "item": {{ article.url | json }}
+            "position": 1,
+            "name": {{ 'breadcrumbs.home' | t | json }},
+            "item": {{ routes.root_url | json }}
           }
-        {% endif %}
-      ]
-    }
-  </script>
+          {% if template contains 'collection' %}
+            {% assign breadcrumb_collections = collection.metafields.custom.breadcrumb_collections.value %}
+            
+            {% if breadcrumb_collections != blank %}
+              {% for bc in breadcrumb_collections %}
+                ,{
+                  "@type": "ListItem",
+                  "position": {{ forloop.index | plus: 1 }},
+                  "name": {{ bc.title | json }},
+                  "item": {{ bc.url | json }}
+                }
+              {% endfor %}
+              ,{
+                "@type": "ListItem",
+                "position": {{ breadcrumb_collections.size | plus: 2 }},
+                "name": {{ collection.title | json }},
+                "item": {{ collection.url | json }}
+              }
+            {% else %}
+              ,{
+                "@type": "ListItem",
+                "position": 2,
+                "name": {{ collection.title | json }},
+                "item": {{ collection.url | json }}
+              }
+            {% endif %}
+          {% elsif template contains 'product' %}
+            {% assign breadcrumb_collections = product.metafields.custom.breadcrumb_collections.value %}
+            
+            {% if breadcrumb_collections != blank %}
+              {% for bc in breadcrumb_collections %}
+                ,{
+                  "@type": "ListItem",
+                  "position": {{ forloop.index | plus: 1 }},
+                  "name": {{ bc.title | json }},
+                  "item": {{ bc.url | json }}
+                }
+              {% endfor %}
+              ,{
+                "@type": "ListItem",
+                "position": {{ breadcrumb_collections.size | plus: 2 }},
+                "name": {{ product.title | json }},
+                "item": {{ product.url | json }}
+              }
+            {% elsif collection %}
+              ,{
+                "@type": "ListItem",
+                "position": 2,
+                "name": {{ collection.title | json }},
+                "item": {{ collection.url | json }}
+              }
+              ,{
+                "@type": "ListItem",
+                "position": 3,
+                "name": {{ product.title | json }},
+                "item": {{ product.url | json }}
+              }
+            {% else %}
+              ,{
+                "@type": "ListItem",
+                "position": 2,
+                "name": {{ product.title | json }},
+                "item": {{ product.url | json }}
+              }
+            {% endif %}
+          {% elsif template contains 'page' %}
+            ,{
+              "@type": "ListItem",
+              "position": 2,
+              "name": {{ page.title | json }},
+              "item": {{ page.url | json }}
+            }
+          {% elsif template contains 'blog' %}
+            ,{
+              "@type": "ListItem",
+              "position": 2,
+              "name": {{ blog.title | json }},
+              "item": {{ blog.url | json }}
+            }
+          {% elsif template contains 'article' %}
+            ,{
+              "@type": "ListItem",
+              "position": 2,
+              "name": {{ blog.title | json }},
+              "item": {{ blog.url | json }}
+            }
+            ,{
+              "@type": "ListItem",
+              "position": 3,
+              "name": {{ article.title | json }},
+              "item": {{ article.url | json }}
+            }
+          {% endif %}
+        ]
+      }
+    </script>
+  </div>
 {% endunless %}
 
 {% stylesheet %}
@@ -128,6 +197,7 @@
     color: var(--color-foreground);
     font-size: 1rem;
     font-weight: 500;
+    margin-top: 2rem;
   }
 
   .breadcrumbs__list {

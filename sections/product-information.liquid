@@ -42,7 +42,9 @@
   {{ closest.product | structured_data }}
 </script>
 
-{% render 'variant-images' %}
+{% comment %}
+  {% render 'variant-images' %}
+{% endcomment %}
 
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <div
