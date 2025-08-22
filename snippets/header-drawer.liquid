@@ -35,6 +35,7 @@
 >
   <details
     id="Details-menu-drawer-container"
+    data-skip-node-update="true"
     class="menu-drawer-container"
     ref="details"
     scroll-lock
@@ -469,13 +470,23 @@
                           {%- endfor -%}
                         </ul>
                         {% liquid
-                          if block_settings.menu_style == 'featured_collections'
-                            assign featured_collections = link.links | where: 'type', 'collection_link'
+                          assign eager_loading = false
+                          if section.index == blank
+                            assign eager_loading = true
                           endif
 
-                          if block_settings.menu_style == 'featured_products'
-                            assign collection_linklist = link.links | where: 'type', 'collection_link' | first
-                            assign featured_products = collection_linklist.object.products
+                          if eager_loading
+                            if block_settings.menu_style == 'featured_collections'
+                              assign featured_collections = link.links | where: 'type', 'collection_link'
+                            endif
+
+                            if block_settings.menu_style == 'featured_products'
+                              assign collection_linklist = link.links | where: 'type', 'collection_link' | first
+                              assign featured_products = collection_linklist.object.products
+                            endif
+                          else
+                            assign featured_collections = null | sort
+                            assign featured_products = null | sort
                           endif
                         -%}
 

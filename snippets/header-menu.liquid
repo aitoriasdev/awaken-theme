@@ -32,10 +32,10 @@
       on:blur="/deactivate"
       on:pointerenter="/activate"
       on:pointerleave="/deactivate"
-      on:touchstart="/handleTouchStart"
     >
       <a
         href="{{ link.url }}"
+        data-skip-node-update="true"
         class="menu-list__link{% if link.active %} menu-list__link--active{% endif %}"
         {%- if link.links != blank -%}
           aria-controls="submenu-{{ forloop.index }}"
@@ -55,6 +55,7 @@
           >
             {% assign list_id = 'MegaMenuList-' | append: forloop.index %}
             {% render 'mega-menu',
+              section: section,
               parent_link: link,
               id: list_id,
               menu_content_type: menu_content_type,
@@ -74,7 +75,6 @@
     on:blur="/deactivate"
     on:pointerenter="/activate"
     on:pointerleave="/deactivate"
-    on:touchstart="/handleTouchStart"
   >
     <button role="menuitem" class="button menu-list__link button-unstyled">
       <span class="menu-list__link-title">{{ 'actions.more' | t }}</span>
